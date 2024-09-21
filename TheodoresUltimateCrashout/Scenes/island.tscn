@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3 uid="uid://e7pj84qea5gd"]
+
+[ext_resource type="PackedScene" uid="uid://dx1syfucm6x8n" path="res://Scenes/player.tscn" id="2_4gu50"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_mh6d1"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_1io32"]
+noise = SubResource("FastNoiseLite_mh6d1")
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_otgfp"]
+normal = Vector2(-0.999924, -0.0123447)
+distance = -113.777
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 1.0
+offset_top = -2.0
+offset_right = 888.0
+offset_bottom = 787.0
+texture = SubResource("NoiseTexture2D_1io32")
+
+[node name="Area2D2" type="Area2D" parent="."]
+position = Vector2(287, 62)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2(483, 481)
+shape = SubResource("WorldBoundaryShape2D_otgfp")
+
+[node name="player" parent="." instance=ExtResource("2_4gu50")]
+position = Vector2(432, 673)
+
+[node name="Camera2D" type="Camera2D" parent="player"]
+zoom = Vector2(3, 3)
