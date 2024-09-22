@@ -1,7 +1,11 @@
 [gd_scene load_steps=5 format=3 uid="uid://dh5drmfhc44is"]
 
 [ext_resource type="Texture2D" uid="uid://bwflowr1qtxhr" path="res://images/vase.png" id="1_3thjj"]
-[ext_resource type="Script" path="res://Scripts/vase.gd" id="1_x783l"]
+<<<<<<< HEAD
+[ext_resource type="Script" path="res://scripts/vase.gd" id="1_wkepw"]
+=======
+[ext_resource type="Script" path="res://scripts/vase.gd" id="1_x783l"]
+>>>>>>> refs/remotes/origin/main
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_dkq7y"]
 
@@ -11,7 +15,12 @@ size = Vector2(178, 245)
 [node name="vase" type="RigidBody2D"]
 physics_material_override = SubResource("PhysicsMaterial_dkq7y")
 gravity_scale = 0.0
+<<<<<<< HEAD
+script = ExtResource("1_wkepw")
+=======
+linear_damp = 5.0
 script = ExtResource("1_x783l")
+>>>>>>> refs/remotes/origin/main
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_3thjj")
