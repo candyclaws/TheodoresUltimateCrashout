@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://waqe6x35b1kn"]
 
-[ext_resource type="Script" path="res://Scripts/score_canvas.gd" id="1_uroqn"]
+[ext_resource type="Script" path="res://scripts/score_canvas.gd" id="1_uroqn"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_rjh3b"]
 font_size = 30

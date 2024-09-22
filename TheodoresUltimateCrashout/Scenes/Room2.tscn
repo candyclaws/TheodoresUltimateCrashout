@@ -5546,8 +5546,6 @@ format = 2
 
 [node name="rigidbody" parent="." instance=ExtResource("6_1uy7d")]
 position = Vector2(232.216, 282.355)
-price = 0
-health = 0
 
 [node name="collision" parent="rigidbody" index="0"]
 position = Vector2(-0.216354, -0.355133)
@@ -5565,8 +5563,6 @@ region_rect = Rect2(81.2056, 81.867, 46.0435, 44.7923)
 
 [node name="rigidbody2" parent="." instance=ExtResource("6_1uy7d")]
 position = Vector2(379.132, -51.0195)
-price = 0
-health = 0
 
 [node name="collision" parent="rigidbody2" index="0"]
 position = Vector2(-0.632019, -1.48053)
@@ -5583,8 +5579,6 @@ region_rect = Rect2(266.39, 616.018, 235.888, 353.832)
 
 [node name="rigidbody3" parent="." instance=ExtResource("6_1uy7d")]
 position = Vector2(474.648, -68.6352)
-price = 0
-health = 0
 
 [node name="collision" parent="rigidbody3" index="0"]
 position = Vector2(-1.64825, 1.13518)
@@ -5602,8 +5596,6 @@ region_rect = Rect2(793.26, 44.8029, 64.9169, 71.4086)
 [node name="rigidbody4" parent="." instance=ExtResource("6_1uy7d")]
 position = Vector2(614.556, 39.6427)
 rotation = -1.0472
-price = 0
-health = 0
 
 [node name="collision" parent="rigidbody4" index="0"]
 shape = SubResource("CapsuleShape2D_s16en")
@@ -5627,8 +5619,6 @@ region_rect = Rect2(453.825, 60.9458, 211.792, 280.766)
 
 [node name="rigidbody5" parent="." instance=ExtResource("6_1uy7d")]
 position = Vector2(504.695, 233.419)
-price = 0
-health = 0
 
 [node name="collision" parent="rigidbody5" index="0"]
 position = Vector2(0.805145, 1.08099)
@@ -5645,8 +5635,6 @@ region_rect = Rect2(570.658, 815.211, 384.633, 133.08)
 
 [node name="rigidbody6" parent="." instance=ExtResource("6_1uy7d")]
 position = Vector2(505.574, 325.551)
-price = 0
-health = 0
 
 [node name="collision" parent="rigidbody6" index="0"]
 position = Vector2(-0.573517, 0.449402)
@@ -5663,8 +5651,6 @@ region_rect = Rect2(923.94, 330.035, 46.2533, 242.627)
 
 [node name="rigidbody7" parent="." instance=ExtResource("6_1uy7d")]
 position = Vector2(444.424, 156.882)
-price = 0
-health = 0
 
 [node name="collision" parent="rigidbody7" index="0"]
 shape = SubResource("CapsuleShape2D_8mthl")
@@ -5680,8 +5666,6 @@ region_rect = Rect2(321.334, 485.513, 62.4826, 76.2774)
 
 [node name="rigidbody8" parent="." instance=ExtResource("6_1uy7d")]
 position = Vector2(559.527, 153.856)
-price = 0
-health = 0
 
 [node name="collision" parent="rigidbody8" index="0"]
 shape = SubResource("CapsuleShape2D_3hkam")
