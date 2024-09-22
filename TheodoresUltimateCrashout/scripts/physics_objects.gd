@@ -3,13 +3,16 @@ extends RigidBody2D
 
 class_name physics_object
 
-@export var price : int
-@export var health : int
-
+@export var price = 200 
+@export var health = 2
+var max_health : int
 @onready var image = $image
 var y_offset_val = 0
 
-
+func _ready():
+	max_health = health
+	if max_health == 0:
+		max_health = 1
 
 func _process(delta):
 	image.global_position = global_position - Vector2(0, y_offset_val)
@@ -28,7 +31,7 @@ func got_hit(z: Vector2):
 	var initial_velocity = 3000;
 	linear_velocity = z * initial_velocity
 	health -= 1
-	Gamestate.damage_caused += price / health / 2
+	Gamestate.damage_caused += price / max_health / 2
 	if health <= 0:
 		Gamestate.damage_caused += price / 2
 		var children = get_children()

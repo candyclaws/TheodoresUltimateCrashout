@@ -5316,6 +5316,8 @@ format = 2
 
 [node name="rigidbody" parent="." instance=ExtResource("5_e8mws")]
 position = Vector2(350.974, 262.591)
+price = 400
+health = 4
 
 [node name="collision" parent="rigidbody" index="0"]
 position = Vector2(-14.4736, -6.59109)
@@ -5332,6 +5334,8 @@ region_rect = Rect2(48.3478, 674.408, 458.255, 328.17)
 
 [node name="rigidbody2" parent="." instance=ExtResource("5_e8mws")]
 position = Vector2(-6.52142, -76.5315)
+price = 600
+health = 4
 
 [node name="collision" parent="rigidbody2" index="0"]
 position = Vector2(-3.97858, -4.46846)
@@ -5348,6 +5352,8 @@ region_rect = Rect2(597.738, 666.476, 184.78, 345.909)
 
 [node name="rigidbody3" parent="." instance=ExtResource("5_e8mws")]
 position = Vector2(-106, -24)
+price = 600
+health = 4
 
 [node name="collision" parent="rigidbody3" index="0"]
 position = Vector2(-2, 3)
@@ -5364,6 +5370,8 @@ region_rect = Rect2(804.692, 645.781, 205.476, 375.473)
 
 [node name="rigidbody4" parent="." instance=ExtResource("5_e8mws")]
 position = Vector2(530.104, 46.7162)
+price = 0
+health = 0
 
 [node name="collision" parent="rigidbody4" index="0"]
 position = Vector2(2.39612, -5.7162)
@@ -5380,6 +5388,8 @@ region_rect = Rect2(651.458, 17.8819, 206.954, 412.43)
 
 [node name="rigidbody5" parent="." instance=ExtResource("5_e8mws")]
 position = Vector2(352.505, 97.2401)
+price = 0
+health = 0
 
 [node name="collision" parent="rigidbody5" index="0"]
 position = Vector2(-6.00458, -12.2401)
@@ -5396,6 +5406,7 @@ region_rect = Rect2(48.3478, 674.408, 458.255, 328.17)
 
 [node name="rigidbody7" parent="." instance=ExtResource("5_e8mws")]
 position = Vector2(-9.05016, 135.009)
+price = 40
 
 [node name="collision" parent="rigidbody7" index="0"]
 position = Vector2(-0.949837, -3.00874)
@@ -5412,6 +5423,7 @@ region_rect = Rect2(42.0639, 418.738, 73.6836, 153.184)
 
 [node name="rigidbody8" parent="." instance=ExtResource("5_e8mws")]
 position = Vector2(-66.6071, 232.92)
+price = 40
 
 [node name="collision" parent="rigidbody8" index="0"]
 position = Vector2(-0.892891, -2.41962)
@@ -5428,6 +5440,7 @@ region_rect = Rect2(190.76, 418.718, 69.0299, 151.633)
 
 [node name="rigidbody6" parent="." instance=ExtResource("5_e8mws")]
 position = Vector2(59.9259, 241.31)
+price = 40
 
 [node name="collision" parent="rigidbody6" index="0"]
 position = Vector2(-1.4259, -1.80986)

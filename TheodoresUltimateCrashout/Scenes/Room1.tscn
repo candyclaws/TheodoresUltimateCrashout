@@ -5309,6 +5309,8 @@ region_rect = Rect2(765.125, 527.188, 212.625, 216)
 
 [node name="rigidbody4" parent="." instance=ExtResource("6_3xq53")]
 position = Vector2(601.081, 164.486)
+price = 600
+health = 6
 
 [node name="collision" parent="rigidbody4" index="0"]
 position = Vector2(2.91919, -6.98639)
@@ -5325,6 +5327,8 @@ region_rect = Rect2(175.826, 37.9404, 47.1836, 59.176)
 
 [node name="rigidbody3" parent="." instance=ExtResource("6_3xq53")]
 position = Vector2(-108.964, 192.979)
+price = 80
+health = 3
 
 [node name="collision" parent="rigidbody3" index="0"]
 position = Vector2(-1.03593, 3.52065)
@@ -5342,6 +5346,7 @@ region_rect = Rect2(135.468, 128.9, 23.3952, 43.4482)
 
 [node name="rigidbody5" parent="." instance=ExtResource("6_3xq53")]
 position = Vector2(534.407, -19.5782)
+price = 40
 
 [node name="collision" parent="rigidbody5" index="0"]
 shape = SubResource("CapsuleShape2D_tpk71")
@@ -5358,6 +5363,7 @@ region_rect = Rect2(222.025, 96.95, 18.8584, 33.0877)
 
 [node name="rigidbody2" parent="." instance=ExtResource("6_3xq53")]
 position = Vector2(220.744, 156.622)
+price = 80
 
 [node name="collision" parent="rigidbody2" index="0"]
 position = Vector2(0, -0.560989)
@@ -5375,6 +5381,8 @@ region_rect = Rect2(192.305, 137.71, 48.2957, 39.2871)
 
 [node name="rigidbody" parent="." instance=ExtResource("6_3xq53")]
 position = Vector2(283.958, 109.146)
+price = 8
+health = 1
 
 [node name="image" parent="rigidbody" index="1"]
 position = Vector2(283.958, 109.146)
