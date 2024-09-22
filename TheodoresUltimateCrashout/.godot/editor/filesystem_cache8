@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1726948796
+::res://::1726962936
 icon.svg::CompressedTexture2D::1179911414471343688::1726939881::1726948507::1::::<><>::
 ::res://2dClassroomAssetPackByStyloo/::1726948780
 read me .txt::TextFile::-1::1726948780::0::1::::<><>::
@@ -48,7 +48,7 @@ Chemistry Lab Second Spritesheet 5.png::CompressedTexture2D::6436506318661479466
 Chemistry Lab Second Spritesheet 6.png::CompressedTexture2D::874171399877764582::1726948780::1726948791::1::::<><>::
 Chemistry Lab Second Spritesheet 7.png::CompressedTexture2D::5948146905169605205::1726948780::1726948791::1::::<><>::
 Chemistry Lab Second Spritesheet 8.png::CompressedTexture2D::8098135343876962604::1726948780::1726948791::1::::<><>::
-::res://2dClassroomAssetPackByStyloo/Classroom/::1726948792
+::res://2dClassroomAssetPackByStyloo/Classroom/::1726952959
 Classroom First Spritesheet 1.png::CompressedTexture2D::8449150872270654944::1726948780::1726948791::1::::<><>::
 Classroom First Spritesheet 2.png::CompressedTexture2D::2073896360134103533::1726948780::1726948791::1::::<><>::
 Classroom First Spritesheet 3.png::CompressedTexture2D::204314433201240303::1726948780::1726948791::1::::<><>::
@@ -134,7 +134,7 @@ strokespritesheet20133.png::CompressedTexture2D::574377356780976777::1726948780:
 strokespritesheet20134.png::CompressedTexture2D::4127580538245912455::1726948780::1726948786::1::::<><>::
 strokespritesheet20135.png::CompressedTexture2D::5560996226713954431::1726948780::1726948786::1::::<><>::
 strokespritesheet20136.png::CompressedTexture2D::8625599539159713900::1726948780::1726948784::1::::<><>::
-::res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/::1726948785
+::res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/::1726960158
 Wallfloordoorw First Spritesheet 1.png::CompressedTexture2D::8310465085845805294::1726948780::1726948784::1::::<><>::
 Wallfloordoorw First Spritesheet 2.png::CompressedTexture2D::6648947916753899085::1726948780::1726948784::1::::<><>::
 Wallfloordoorw First Spritesheet 3.png::CompressedTexture2D::958103295593842657::1726948780::1726948784::1::::<><>::
@@ -151,21 +151,51 @@ WallFloorDoorW second spritesheet 5.png::CompressedTexture2D::845354824991709424
 WallFloorDoorW second spritesheet 6.png::CompressedTexture2D::8794057158024595565::1726948780::1726948785::1::::<><>::
 WallFloorDoorW second spritesheet 7.png::CompressedTexture2D::5380055333660406639::1726948780::1726948785::1::::<><>::
 WallFloorDoorW second spritesheet 8.png::CompressedTexture2D::8063670168037010254::1726948780::1726948785::1::::<><>::
+::res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/3D Voxel Interior Furniture Pack/::1726960176
+preview_01.png::CompressedTexture2D::6561971713370193098::1726960176::1726960158::1::::<><>::
+preview_02.png::CompressedTexture2D::1058248040839272466::1726960176::1726960158::1::::<><>::
+preview_03.png::CompressedTexture2D::387158876874064875::1726960176::1726960158::1::::<><>::
+preview_04.png::CompressedTexture2D::8336017556598255318::1726960176::1726960158::1::::<><>::
+preview_all.png::CompressedTexture2D::9020603827478135862::1726960176::1726960158::1::::<><>::
+README.txt::TextFile::-1::1726960176::0::1::::<><>::
+::res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/3D Voxel Interior Furniture Pack/Beds/::1726960176
+::res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/3D Voxel Interior Furniture Pack/Chairs/::1726960176
+::res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/3D Voxel Interior Furniture Pack/Chairs/Fragments/::1726960176
+::res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/3D Voxel Interior Furniture Pack/Misc/::1726960176
+::res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/3D Voxel Interior Furniture Pack/Misc/Fragments/::1726960176
+::res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/3D Voxel Interior Furniture Pack/Misc/Plants/::1726960176
+::res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/3D Voxel Interior Furniture Pack/Tables/::1726960176
+::res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/3D Voxel Interior Furniture Pack/Tables/Fragments/::1726960176
+::res://3D Voxel Interior Furniture Pack/::1726960185
+preview_01.png::CompressedTexture2D::8073087281161509428::1726960185::1726960185::1::::<><>::
+preview_02.png::CompressedTexture2D::5690572042062901092::1726960185::1726960185::1::::<><>::
+preview_03.png::CompressedTexture2D::5445052590770673129::1726960185::1726960185::1::::<><>::
+preview_04.png::CompressedTexture2D::6565332209380672190::1726960185::1726960185::1::::<><>::
+preview_all.png::CompressedTexture2D::5981456235885608810::1726960185::1726960185::1::::<><>::
+README.txt::TextFile::-1::1726960185::0::1::::<><>::
+::res://3D Voxel Interior Furniture Pack/Beds/::1726960185
+::res://3D Voxel Interior Furniture Pack/Chairs/::1726960185
+::res://3D Voxel Interior Furniture Pack/Chairs/Fragments/::1726960185
+::res://3D Voxel Interior Furniture Pack/Misc/::1726960185
+::res://3D Voxel Interior Furniture Pack/Misc/Fragments/::1726960185
+::res://3D Voxel Interior Furniture Pack/Misc/Plants/::1726960185
+::res://3D Voxel Interior Furniture Pack/Tables/::1726960185
+::res://3D Voxel Interior Furniture Pack/Tables/Fragments/::1726960185
 ::res://brackeys_platformer_assets/::1726948796
 LICENSE & CREDITS.txt::TextFile::-1::1726948796::0::1::::<><>::
 ::res://brackeys_platformer_assets/fonts/::1726948796
 PixelOperator8-Bold.ttf::FontFile::4206041204936206071::1726948796::1726948796::1::::<><>::
 PixelOperator8.ttf::FontFile::7855884580565015537::1726948796::1726948796::1::::<><>::
-::res://brackeys_platformer_assets/music/::1726948796
+::res://brackeys_platformer_assets/music/::1726948797
 time_for_adventure.mp3::AudioStreamMP3::2101384843336082271::1726948796::1726948797::1::::<><>::
-::res://brackeys_platformer_assets/sounds/::1726948796
+::res://brackeys_platformer_assets/sounds/::1726948808
 coin.wav::AudioStreamWAV::2488505481574679306::1726948796::1726948808::1::::<><>::
 explosion.wav::AudioStreamWAV::5808649984703138172::1726948796::1726948808::1::::<><>::
 hurt.wav::AudioStreamWAV::1263813243300918560::1726948796::1726948808::1::::<><>::
 jump.wav::AudioStreamWAV::6746522313913455556::1726948796::1726948808::1::::<><>::
 power_up.wav::AudioStreamWAV::4789268753127041553::1726948796::1726948808::1::::<><>::
 tap.wav::AudioStreamWAV::4198507163880679625::1726948796::1726948808::1::::<><>::
-::res://brackeys_platformer_assets/sprites/::1726948796
+::res://brackeys_platformer_assets/sprites/::1726948801
 coin.png::CompressedTexture2D::3287954508226174765::1726948796::1726948801::1::::<><>::
 fruit.png::CompressedTexture2D::2665455894421276384::1726948796::1726948801::1::::<><>::
 knight.png::CompressedTexture2D::265092811064579757::1726948796::1726948801::1::::<><>::
@@ -175,7 +205,7 @@ slime_purple.png::CompressedTexture2D::6313676901810626107::1726948796::17269488
 world_tileset.png::CompressedTexture2D::824358879862042000::1726948796::1726948801::1::::<><>::
 ::res://brackeys_platformer_assets/sprites/2dClassroomAssetPackByStyloo/::1726948796
 read me .txt::TextFile::-1::1726948796::0::1::::<><>::
-::res://brackeys_platformer_assets/sprites/2dClassroomAssetPackByStyloo/Art Room/::1726948796
+::res://brackeys_platformer_assets/sprites/2dClassroomAssetPackByStyloo/Art Room/::1726948804
 Art Room Spritesheet 1.png::CompressedTexture2D::1623665009986329059::1726948796::1726948804::1::::<><>::
 Art Room Spritesheet 2.png::CompressedTexture2D::6315515782963566495::1726948796::1726948804::1::::<><>::
 Art Room Spritesheet 3.png::CompressedTexture2D::6403436619520498638::1726948796::1726948804::1::::<><>::
@@ -184,7 +214,7 @@ Art Room Spritesheet 5.png::CompressedTexture2D::4787622295475331169::1726948796
 Art Room Spritesheet 6.png::CompressedTexture2D::5558557076814733593::1726948796::1726948804::1::::<><>::
 Art Room Spritesheet 7.png::CompressedTexture2D::8221893641291084388::1726948796::1726948804::1::::<><>::
 Art Room Spritesheet 8.png::CompressedTexture2D::220493130160792008::1726948796::1726948804::1::::<><>::
-::res://brackeys_platformer_assets/sprites/2dClassroomAssetPackByStyloo/Cafeteria/::1726948796
+::res://brackeys_platformer_assets/sprites/2dClassroomAssetPackByStyloo/Cafeteria/::1726948805
 Cafeteria First Spritesheet 1.png::CompressedTexture2D::845931743435433448::1726948796::1726948804::1::::<><>::
 Cafeteria First Spritesheet 2.png::CompressedTexture2D::7859044713945303706::1726948796::1726948804::1::::<><>::
 Cafeteria First Spritesheet 3.png::CompressedTexture2D::3936292614314054200::1726948796::1726948804::1::::<><>::
@@ -201,7 +231,7 @@ Cafeteria Second Spritesheet 5.png::CompressedTexture2D::1165294990892935722::17
 Cafeteria Second Spritesheet 6.png::CompressedTexture2D::8299349689603095805::1726948796::1726948803::1::::<><>::
 Cafeteria Second Spritesheet 7.png::CompressedTexture2D::7588015450664723080::1726948796::1726948803::1::::<><>::
 Cafeteria Second Spritesheet 8.png::CompressedTexture2D::424695707449475602::1726948796::1726948803::1::::<><>::
-::res://brackeys_platformer_assets/sprites/2dClassroomAssetPackByStyloo/Chemistry lab/::1726948796
+::res://brackeys_platformer_assets/sprites/2dClassroomAssetPackByStyloo/Chemistry lab/::1726948807
 Chemistry Lab First Spritesheet 1.png::CompressedTexture2D::9041892885525579548::1726948796::1726948803::1::::<><>::
 Chemistry Lab First Spritesheet 2.png::CompressedTexture2D::2744534928600767391::1726948796::1726948803::1::::<><>::
 Chemistry Lab First Spritesheet 3.png::CompressedTexture2D::1900630664981493745::1726948796::1726948803::1::::<><>::
@@ -218,7 +248,7 @@ Chemistry Lab Second Spritesheet 5.png::CompressedTexture2D::5877587730433306454
 Chemistry Lab Second Spritesheet 6.png::CompressedTexture2D::3738347785999443806::1726948796::1726948806::1::::<><>::
 Chemistry Lab Second Spritesheet 7.png::CompressedTexture2D::4026854263600459387::1726948796::1726948807::1::::<><>::
 Chemistry Lab Second Spritesheet 8.png::CompressedTexture2D::1568397474410901935::1726948796::1726948807::1::::<><>::
-::res://brackeys_platformer_assets/sprites/2dClassroomAssetPackByStyloo/Classroom/::1726948796
+::res://brackeys_platformer_assets/sprites/2dClassroomAssetPackByStyloo/Classroom/::1726948808
 Classroom First Spritesheet 1.png::CompressedTexture2D::831603181623006780::1726948796::1726948807::1::::<><>::
 Classroom First Spritesheet 2.png::CompressedTexture2D::2895175107334950309::1726948796::1726948807::1::::<><>::
 Classroom First Spritesheet 3.png::CompressedTexture2D::8446499943440318924::1726948796::1726948807::1::::<><>::
@@ -235,7 +265,7 @@ Classroom Second Spritesheet 5.png::CompressedTexture2D::4859731584818550050::17
 Classroom Second Spritesheet 6.png::CompressedTexture2D::1480242039268950469::1726948796::1726948805::1::::<><>::
 Classroom Second Spritesheet 7.png::CompressedTexture2D::443461757380526742::1726948796::1726948805::1::::<><>::
 Classroom Second Spritesheet 8.png::CompressedTexture2D::1210475936060909133::1726948796::1726948805::1::::<><>::
-::res://brackeys_platformer_assets/sprites/2dClassroomAssetPackByStyloo/Classroom 2 Props/::1726948796
+::res://brackeys_platformer_assets/sprites/2dClassroomAssetPackByStyloo/Classroom 2 Props/::1726948806
 Classroom Props First Spritesheet 1.png::CompressedTexture2D::45538715719906146::1726948796::1726948805::1::::<><>::
 Classroom Props First Spritesheet 2.png::CompressedTexture2D::3970600018406599947::1726948796::1726948805::1::::<><>::
 Classroom Props First Spritesheet 3.png::CompressedTexture2D::1289040027089227541::1726948796::1726948805::1::::<><>::
@@ -252,7 +282,7 @@ Classroom Props Second Spritesheet 5.png::CompressedTexture2D::20483387545936454
 Classroom Props Second Spritesheet 6.png::CompressedTexture2D::3708028991136056541::1726948796::1726948799::1::::<><>::
 Classroom Props Second Spritesheet 7.png::CompressedTexture2D::4112787944298080210::1726948796::1726948799::1::::<><>::
 Classroom Props Second Spritesheet 8.png::CompressedTexture2D::1528445794673172582::1726948796::1726948799::1::::<><>::
-::res://brackeys_platformer_assets/sprites/2dClassroomAssetPackByStyloo/Computer Room/::1726948796
+::res://brackeys_platformer_assets/sprites/2dClassroomAssetPackByStyloo/Computer Room/::1726948799
 Computer Room Spritesheet 1.png::CompressedTexture2D::4996675509269315489::1726948796::1726948799::1::::<><>::
 Computer Room Spritesheet 2.png::CompressedTexture2D::375328487071993088::1726948796::1726948799::1::::<><>::
 Computer Room Spritesheet 3.png::CompressedTexture2D::1633685797009348475::1726948796::1726948799::1::::<><>::
@@ -261,7 +291,7 @@ Computer Room Spritesheet 5.png::CompressedTexture2D::6651963916969808630::17269
 Computer Room Spritesheet 6.png::CompressedTexture2D::791735583828486299::1726948796::1726948799::1::::<><>::
 Computer Room Spritesheet 7.png::CompressedTexture2D::216653555562996260::1726948796::1726948799::1::::<><>::
 Computer Room Spritesheet 8.png::CompressedTexture2D::8905756695761282964::1726948796::1726948799::1::::<><>::
-::res://brackeys_platformer_assets/sprites/2dClassroomAssetPackByStyloo/Principal Office/::1726948796
+::res://brackeys_platformer_assets/sprites/2dClassroomAssetPackByStyloo/Principal Office/::1726948800
 Principal Office First Spritesheet 1.png::CompressedTexture2D::4357289887464601171::1726948796::1726948799::1::::<><>::
 Principal Office First Spritesheet 2.png::CompressedTexture2D::6034928083956044002::1726948796::1726948800::1::::<><>::
 Principal Office First Spritesheet 3.png::CompressedTexture2D::3063164321450001905::1726948796::1726948800::1::::<><>::
@@ -278,7 +308,7 @@ Principal Office Second Spritesheet 5.png::CompressedTexture2D::8624172194970588
 Principal Office Second Spritesheet 6.png::CompressedTexture2D::2501362032884214359::1726948796::1726948797::1::::<><>::
 Principal Office Second Spritesheet 7.png::CompressedTexture2D::3589729654413839251::1726948796::1726948798::1::::<><>::
 Principal Office Second Spritesheet 8.png::CompressedTexture2D::2243713347967264721::1726948796::1726948798::1::::<><>::
-::res://brackeys_platformer_assets/sprites/2dClassroomAssetPackByStyloo/Toilet/::1726948796
+::res://brackeys_platformer_assets/sprites/2dClassroomAssetPackByStyloo/Toilet/::1726948798
 Toilet Spritesheet 1.png::CompressedTexture2D::7744926099784817361::1726948796::1726948798::1::::<><>::
 Toilet Spritesheet 2.png::CompressedTexture2D::8971284365122739421::1726948796::1726948798::1::::<><>::
 Toilet Spritesheet 3.png::CompressedTexture2D::8149651046829150141::1726948796::1726948798::1::::<><>::
@@ -287,7 +317,7 @@ Toilet Spritesheet 5.png::CompressedTexture2D::8468426414058718706::1726948796::
 Toilet Spritesheet 6.png::CompressedTexture2D::7588209321097769498::1726948796::1726948798::1::::<><>::
 Toilet Spritesheet 7.png::CompressedTexture2D::4825400051559952419::1726948796::1726948798::1::::<><>::
 Toilet Spritesheet 8.png::CompressedTexture2D::3286893491496369300::1726948796::1726948798::1::::<><>::
-::res://brackeys_platformer_assets/sprites/2dClassroomAssetPackByStyloo/WallFloorDoor second version tiling/::1726948796
+::res://brackeys_platformer_assets/sprites/2dClassroomAssetPackByStyloo/WallFloorDoor second version tiling/::1726948802
 strokespritesheet20121.png::CompressedTexture2D::1234722370694943486::1726948796::1726948798::1::::<><>::
 strokespritesheet20122.png::CompressedTexture2D::1898353250866642805::1726948796::1726948798::1::::<><>::
 strokespritesheet20123.png::CompressedTexture2D::5824021016645732809::1726948796::1726948801::1::::<><>::
@@ -304,7 +334,7 @@ strokespritesheet20133.png::CompressedTexture2D::4650267773809676735::1726948796
 strokespritesheet20134.png::CompressedTexture2D::7346880965458082810::1726948796::1726948802::1::::<><>::
 strokespritesheet20135.png::CompressedTexture2D::1642530744919182661::1726948796::1726948802::1::::<><>::
 strokespritesheet20136.png::CompressedTexture2D::1958791271618379082::1726948796::1726948802::1::::<><>::
-::res://brackeys_platformer_assets/sprites/2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/::1726948796
+::res://brackeys_platformer_assets/sprites/2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/::1726948802
 Wallfloordoorw First Spritesheet 1.png::CompressedTexture2D::1725990391295819594::1726948796::1726948802::1::::<><>::
 Wallfloordoorw First Spritesheet 2.png::CompressedTexture2D::1282184751722657342::1726948796::1726948802::1::::<><>::
 Wallfloordoorw First Spritesheet 3.png::CompressedTexture2D::8348799797938634349::1726948796::1726948802::1::::<><>::
@@ -321,7 +351,13 @@ WallFloorDoorW second spritesheet 5.png::CompressedTexture2D::442669265680117359
 WallFloorDoorW second spritesheet 6.png::CompressedTexture2D::7171346603427937559::1726948796::1726948801::1::::<><>::
 WallFloorDoorW second spritesheet 7.png::CompressedTexture2D::6646230182358355569::1726948796::1726948801::1::::<><>::
 WallFloorDoorW second spritesheet 8.png::CompressedTexture2D::6335768756608016678::1726948796::1726948801::1::::<><>::
-::res://Scenes/::1726948767
+::res://Pixel Lands Interiors Demo/::1726952959
+INFO.txt::TextFile::-1::1726952953::0::1::::<><>::
+interiors_demo.png::CompressedTexture2D::7383512914915294980::1726952953::1726952959::1::::<><>::
+::res://Scenes/::1726962936
 daves house.tscn::PackedScene::6366713818310149363::1726939881::0::1::::<><>::
-Room1.tscn::PackedScene::3324013283951105108::1726948625::0::1::::<><>::uid://dqnwe7secp7cs::::res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 1.png<>uid://c1y2g3c5fdsob::::res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 2.png<>uid://nwd26oj2gt50::::res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 3.png
+Room1 (2).tscn::PackedScene::4181334061420945342::1726956411::0::1::::<><>::uid://dqnwe7secp7cs::::res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 1.png<>uid://c1y2g3c5fdsob::::res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 2.png<>uid://nwd26oj2gt50::::res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 3.png
+Room1.tscn::PackedScene::3324013283951105108::1726948868::0::1::::<><>::uid://dqnwe7secp7cs::::res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 1.png<>uid://c1y2g3c5fdsob::::res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 2.png<>uid://nwd26oj2gt50::::res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 3.png
 Room2.tscn::PackedScene::-1::1726948656::0::1::::<><>::
+Room3.tscn::PackedScene::7314448303269266831::1726960203::0::1::::<><>::uid://dqnwe7secp7cs::::res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 1.png<>uid://c1y2g3c5fdsob::::res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 2.png<>uid://nwd26oj2gt50::::res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 3.png<>uid://dsm3jsgatxt6o::::res://2dClassroomAssetPackByStyloo/Classroom/Classroom First Spritesheet 1.png<>uid://4rimwrsxxsj5::::res://2dClassroomAssetPackByStyloo/assetsFurniture/4 BigSet.png<>uid://b3cx6st1awskh::::res://brackeys_platformer_assets/sprites/2dClassroomAssetPackByStyloo/Principal Office/Principal Office First Spritesheet 1.png
+Room4.tscn::PackedScene::3061944766138707065::1726962237::0::1::::<><>::uid://dqnwe7secp7cs::::res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 1.png<>uid://c1y2g3c5fdsob::::res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 2.png<>uid://nwd26oj2gt50::::res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 3.png<>uid://dsm3jsgatxt6o::::res://2dClassroomAssetPackByStyloo/Classroom/Classroom First Spritesheet 1.png<>uid://lyfgxrkj8ol4::::res://2dClassroomAssetPackByStyloo/Cafeteria/Cafeteria First Spritesheet 1.png<>uid://c3jegfygeqv7e::::res://2dClassroomAssetPackByStyloo/Cafeteria/Cafeteria First Spritesheet 2.png<>uid://cp1so7bnw6h5f::::res://2dClassroomAssetPackByStyloo/Cafeteria/Cafeteria First Spritesheet 7.png
