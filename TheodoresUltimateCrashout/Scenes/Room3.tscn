@@ -1,11 +1,10 @@
-[gd_scene load_steps=17 format=3 uid="uid://dchf5orf383hj"]
+[gd_scene load_steps=16 format=3 uid="uid://dchf5orf383hj"]
 
 [ext_resource type="Texture2D" uid="uid://dqnwe7secp7cs" path="res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 1.png" id="1_0rdak"]
 [ext_resource type="Texture2D" uid="uid://c1y2g3c5fdsob" path="res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 2.png" id="2_ki7n2"]
 [ext_resource type="Texture2D" uid="uid://nwd26oj2gt50" path="res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 3.png" id="3_yxo6y"]
 [ext_resource type="Texture2D" uid="uid://dsm3jsgatxt6o" path="res://2dClassroomAssetPackByStyloo/Classroom/Classroom First Spritesheet 1.png" id="4_oruwk"]
 [ext_resource type="Texture2D" uid="uid://4rimwrsxxsj5" path="res://2dClassroomAssetPackByStyloo/assetsFurniture/4 BigSet.png" id="5_upqi6"]
-[ext_resource type="Texture2D" uid="uid://b3cx6st1awskh" path="res://brackeys_platformer_assets/sprites/2dClassroomAssetPackByStyloo/Principal Office/Principal Office First Spritesheet 1.png" id="6_f0yb8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vekoh"]
 texture = ExtResource("1_0rdak")
@@ -5494,7 +5493,6 @@ format = 2
 [node name="Sprite2D5" type="Sprite2D" parent="."]
 position = Vector2(387, -113)
 scale = Vector2(0.61939, 0.525044)
-texture = ExtResource("6_f0yb8")
 flip_h = true
 region_enabled = true
 region_rect = Rect2(504.033, 114.939, 494.002, 385.109)
@@ -5502,7 +5500,6 @@ region_rect = Rect2(504.033, 114.939, 494.002, 385.109)
 [node name="Sprite2D6" type="Sprite2D" parent="."]
 position = Vector2(347, 79)
 scale = Vector2(0.499599, 0.347137)
-texture = ExtResource("6_f0yb8")
 flip_h = true
 region_enabled = true
 region_rect = Rect2(25.0098, 692.679, 416.98, 260.281)
@@ -5510,7 +5507,6 @@ region_rect = Rect2(25.0098, 692.679, 416.98, 260.281)
 [node name="Sprite2D7" type="Sprite2D" parent="."]
 position = Vector2(580, 83)
 scale = Vector2(0.535656, 0.394008)
-texture = ExtResource("6_f0yb8")
 flip_h = true
 region_enabled = true
 region_rect = Rect2(570.431, 680.651, 427.604, 284.184)
@@ -5518,7 +5514,6 @@ region_rect = Rect2(570.431, 680.651, 427.604, 284.184)
 [node name="Sprite2D9" type="Sprite2D" parent="."]
 position = Vector2(590.028, 213.763)
 scale = Vector2(0.524461, 0.367868)
-texture = ExtResource("6_f0yb8")
 flip_h = true
 region_enabled = true
 region_rect = Rect2(570.431, 680.651, 427.604, 284.184)
@@ -5526,7 +5521,6 @@ region_rect = Rect2(570.431, 680.651, 427.604, 284.184)
 [node name="Sprite2D8" type="Sprite2D" parent="."]
 position = Vector2(348, 212)
 scale = Vector2(0.499599, 0.347137)
-texture = ExtResource("6_f0yb8")
 flip_h = true
 region_enabled = true
 region_rect = Rect2(25.0098, 692.679, 416.98, 260.281)
