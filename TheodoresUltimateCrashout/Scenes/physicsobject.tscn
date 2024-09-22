@@ -1,19 +1,22 @@
-[gd_scene load_steps=3 format=3 uid="uid://cxnqq3m33ygmy"]
+[gd_scene load_steps=4 format=3 uid="uid://cxnqq3m33ygmy"]
+
+[ext_resource type="Script" path="res://scripts/physics_objects.gd" id="1_v1ln8"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ifxr3"]
 radius = 11.0
 
 [sub_resource type="NoiseTexture2D" id="NoiseTexture2D_6cxsq"]
 
-[node name="Node2D" type="Node2D"]
+[node name="rigidbody" type="RigidBody2D"]
+gravity_scale = 0.0
+linear_damp = 5.0
+script = ExtResource("1_v1ln8")
 
-[node name="RigidBody2D" type="RigidBody2D" parent="."]
-linear_velocity = Vector2(0, 29.685)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+[node name="collision" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_ifxr3")
 
-[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D"]
+[node name="image" type="Sprite2D" parent="."]
+top_level = true
 position = Vector2(-1.19209e-07, -2.98023e-08)
 scale = Vector2(0.0449219, 0.0644531)
 texture = SubResource("NoiseTexture2D_6cxsq")
