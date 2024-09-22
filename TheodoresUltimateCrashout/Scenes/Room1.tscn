@@ -1,10 +1,11 @@
-[gd_scene load_steps=19 format=3 uid="uid://bnmgapgsp8hpc"]
+[gd_scene load_steps=24 format=3 uid="uid://bnmgapgsp8hpc"]
 
 [ext_resource type="Texture2D" uid="uid://dqnwe7secp7cs" path="res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 1.png" id="1_hrise"]
 [ext_resource type="Texture2D" uid="uid://c1y2g3c5fdsob" path="res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 2.png" id="2_il54i"]
 [ext_resource type="Texture2D" uid="uid://nwd26oj2gt50" path="res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 3.png" id="3_sho53"]
 [ext_resource type="Texture2D" uid="uid://dsm3jsgatxt6o" path="res://2dClassroomAssetPackByStyloo/Classroom/Classroom First Spritesheet 1.png" id="4_xej5v"]
 [ext_resource type="Texture2D" uid="uid://ddgvm5c2ejldk" path="res://Pixel Lands Interiors Demo/interiors_demo.png" id="5_mkwno"]
+[ext_resource type="PackedScene" uid="uid://cxnqq3m33ygmy" path="res://Scenes/physicsobject.tscn" id="6_3xq53"]
 [ext_resource type="Script" path="res://Scenes/area_2d.gd" id="6_h6luy"]
 [ext_resource type="PackedScene" uid="uid://hy2guxv6j73r" path="res://Scenes/player.tscn" id="7_bvbsx"]
 [ext_resource type="Script" path="res://Scenes/room1to5.gd" id="8_jjhii"]
@@ -5248,6 +5249,19 @@ texture = ExtResource("4_xej5v")
 [sub_resource type="TileSet" id="TileSet_4l684"]
 sources/0 = SubResource("TileSetAtlasSource_swnil")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_urxl7"]
+size = Vector2(150, 153)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_evmq0"]
+size = Vector2(78, 121)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tpk71"]
+radius = 35.5928
+height = 117.186
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jdm31"]
+size = Vector2(207, 126.122)
+
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_15kgg"]
 normal = Vector2(-0.00369001, -0.999993)
 distance = -171.0
@@ -5293,39 +5307,80 @@ texture = ExtResource("4_xej5v")
 region_enabled = true
 region_rect = Rect2(765.125, 527.188, 212.625, 216)
 
-[node name="Sprite2D2" type="Sprite2D" parent="."]
-position = Vector2(599.062, 161.188)
+[node name="rigidbody4" parent="." instance=ExtResource("6_3xq53")]
+position = Vector2(601.081, 164.486)
+
+[node name="collision" parent="rigidbody4" index="0"]
+position = Vector2(2.91919, -6.98639)
+shape = SubResource("RectangleShape2D_urxl7")
+
+[node name="image" parent="rigidbody4" index="1"]
+position = Vector2(601.081, 164.486)
+
+[node name="Sprite2D2" type="Sprite2D" parent="rigidbody4/image" index="0"]
 scale = Vector2(3.36436, 2.88771)
 texture = ExtResource("5_mkwno")
 region_enabled = true
 region_rect = Rect2(175.826, 37.9404, 47.1836, 59.176)
 
-[node name="Sprite2D3" type="Sprite2D" parent="."]
-position = Vector2(-108, 190)
+[node name="rigidbody3" parent="." instance=ExtResource("6_3xq53")]
+position = Vector2(-108.964, 192.979)
+
+[node name="collision" parent="rigidbody3" index="0"]
+position = Vector2(-1.03593, 3.52065)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_evmq0")
+
+[node name="image" parent="rigidbody3" index="1"]
+position = Vector2(-108.964, 192.979)
+
+[node name="Sprite2D3" type="Sprite2D" parent="rigidbody3/image" index="0"]
 scale = Vector2(3.89957, 3.002)
 texture = ExtResource("5_mkwno")
 flip_h = true
 region_enabled = true
 region_rect = Rect2(135.468, 128.9, 23.3952, 43.4482)
 
-[node name="Sprite2D4" type="Sprite2D" parent="."]
-position = Vector2(534, -19)
+[node name="rigidbody5" parent="." instance=ExtResource("6_3xq53")]
+position = Vector2(534.407, -19.5782)
+
+[node name="collision" parent="rigidbody5" index="0"]
+shape = SubResource("CapsuleShape2D_tpk71")
+
+[node name="image" parent="rigidbody5" index="1"]
+position = Vector2(534.407, -19.5782)
+
+[node name="Sprite2D4" type="Sprite2D" parent="rigidbody5/image" index="0"]
 scale = Vector2(3.89957, 3.002)
 texture = ExtResource("5_mkwno")
 flip_h = true
 region_enabled = true
 region_rect = Rect2(222.025, 96.95, 18.8584, 33.0877)
 
-[node name="Sprite2D5" type="Sprite2D" parent="."]
-position = Vector2(347, 156)
+[node name="rigidbody2" parent="." instance=ExtResource("6_3xq53")]
+position = Vector2(220.744, 156.622)
+
+[node name="collision" parent="rigidbody2" index="0"]
+position = Vector2(0, -0.560989)
+shape = SubResource("RectangleShape2D_jdm31")
+
+[node name="image" parent="rigidbody2" index="1"]
+position = Vector2(220.744, 156.622)
+
+[node name="Sprite2D5" type="Sprite2D" parent="rigidbody2/image" index="0"]
 scale = Vector2(4.69979, 3.39843)
 texture = ExtResource("5_mkwno")
 flip_h = true
 region_enabled = true
 region_rect = Rect2(192.305, 137.71, 48.2957, 39.2871)
 
-[node name="Sprite2D6" type="Sprite2D" parent="."]
-position = Vector2(285, 106)
+[node name="rigidbody" parent="." instance=ExtResource("6_3xq53")]
+position = Vector2(283.958, 109.146)
+
+[node name="image" parent="rigidbody" index="1"]
+position = Vector2(283.958, 109.146)
+
+[node name="image2" type="Sprite2D" parent="rigidbody/image" index="0"]
 scale = Vector2(4.69979, 3.39843)
 texture = ExtResource("5_mkwno")
 flip_h = true
@@ -5392,7 +5447,7 @@ position = Vector2(131.75, -6.25)
 shape = SubResource("RectangleShape2D_tvmim")
 
 [node name="player" parent="." instance=ExtResource("7_bvbsx")]
-position = Vector2(519, 74)
+position = Vector2(415, 168)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
 
@@ -5407,3 +5462,9 @@ shape = SubResource("RectangleShape2D_tvmim")
 [connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]
 [connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_body_entered"]
 [connection signal="body_exited" from="Area2D2" to="Area2D2" method="_on_body_exited"]
+
+[editable path="rigidbody4"]
+[editable path="rigidbody3"]
+[editable path="rigidbody5"]
+[editable path="rigidbody2"]
+[editable path="rigidbody"]

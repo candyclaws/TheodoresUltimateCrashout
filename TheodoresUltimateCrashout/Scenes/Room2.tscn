@@ -1,10 +1,11 @@
-[gd_scene load_steps=24 format=3 uid="uid://b122xsuajqp7f"]
+[gd_scene load_steps=33 format=3 uid="uid://b122xsuajqp7f"]
 
 [ext_resource type="Texture2D" uid="uid://dqnwe7secp7cs" path="res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 1.png" id="1_ri56g"]
 [ext_resource type="Texture2D" uid="uid://c1y2g3c5fdsob" path="res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 2.png" id="2_if5f0"]
 [ext_resource type="Texture2D" uid="uid://nwd26oj2gt50" path="res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 3.png" id="3_f43im"]
 [ext_resource type="Texture2D" uid="uid://dsm3jsgatxt6o" path="res://2dClassroomAssetPackByStyloo/Classroom/Classroom First Spritesheet 1.png" id="4_r7ijg"]
 [ext_resource type="Texture2D" uid="uid://4rimwrsxxsj5" path="res://2dClassroomAssetPackByStyloo/assetsFurniture/4 BigSet.png" id="5_e7g5t"]
+[ext_resource type="PackedScene" uid="uid://cxnqq3m33ygmy" path="res://Scenes/physicsobject.tscn" id="6_1uy7d"]
 [ext_resource type="Texture2D" uid="uid://ddgvm5c2ejldk" path="res://Pixel Lands Interiors Demo/interiors_demo.png" id="6_2y8ss"]
 [ext_resource type="Texture2D" uid="uid://fivuj6uf8s33" path="res://2dClassroomAssetPackByStyloo/Toilet/Toilet Spritesheet 1.png" id="7_csalc"]
 [ext_resource type="Script" path="res://Scenes/room2to1.gd" id="8_b5f3e"]
@@ -5461,6 +5462,34 @@ texture = ExtResource("5_e7g5t")
 [sub_resource type="TileSet" id="TileSet_h3dy0"]
 sources/0 = SubResource("TileSetAtlasSource_qr6hg")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_emx6a"]
+size = Vector2(102, 148)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o5p06"]
+size = Vector2(93, 133)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7h1mp"]
+size = Vector2(30, 83)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_s16en"]
+radius = 46.7139
+height = 187.781
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0hw8l"]
+size = Vector2(243, 107)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sil1e"]
+radius = 12.0
+height = 66.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8mthl"]
+radius = 24.118
+height = 84.2359
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3hkam"]
+radius = 25.4734
+height = 62.9468
+
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_eckgt"]
 normal = Vector2(-0.00369001, -0.999993)
 distance = -171.0
@@ -5478,10 +5507,10 @@ size = Vector2(114, 111)
 [node name="Room2" type="Node2D"]
 
 [node name="ColorRect" type="ColorRect" parent="."]
-offset_left = -522.0
-offset_top = -524.0
-offset_right = 1192.0
-offset_bottom = 877.0
+offset_left = -493.0
+offset_top = -523.0
+offset_right = 1221.0
+offset_bottom = 878.0
 color = Color(0, 0, 0, 1)
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -5515,31 +5544,67 @@ scale = Vector2(0.921974, 0.996402)
 tile_set = SubResource("TileSet_h3dy0")
 format = 2
 
-[node name="Sprite2D5" type="Sprite2D" parent="."]
-position = Vector2(232, 283)
+[node name="rigidbody" parent="." instance=ExtResource("6_1uy7d")]
+position = Vector2(232.216, 282.355)
+
+[node name="collision" parent="rigidbody" index="0"]
+position = Vector2(-0.216354, -0.355133)
+shape = SubResource("RectangleShape2D_emx6a")
+
+[node name="image" parent="rigidbody" index="1"]
+position = Vector2(232.216, 282.355)
+
+[node name="Sprite2D5" type="Sprite2D" parent="rigidbody/image" index="0"]
 scale = Vector2(2.23913, 3.39843)
 texture = ExtResource("6_2y8ss")
 flip_h = true
 region_enabled = true
 region_rect = Rect2(81.2056, 81.867, 46.0435, 44.7923)
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(380, -51)
+[node name="rigidbody2" parent="." instance=ExtResource("6_1uy7d")]
+position = Vector2(379.132, -51.0195)
+
+[node name="collision" parent="rigidbody2" index="0"]
+position = Vector2(-0.632019, -1.48053)
+shape = SubResource("RectangleShape2D_o5p06")
+
+[node name="image" parent="rigidbody2" index="1"]
+position = Vector2(379.132, -51.0195)
+
+[node name="Sprite2D" type="Sprite2D" parent="rigidbody2/image" index="0"]
 scale = Vector2(0.708511, 0.412181)
 texture = ExtResource("7_csalc")
 region_enabled = true
 region_rect = Rect2(266.39, 616.018, 235.888, 353.832)
 
-[node name="Sprite2D2" type="Sprite2D" parent="."]
-position = Vector2(474, -70)
+[node name="rigidbody3" parent="." instance=ExtResource("6_1uy7d")]
+position = Vector2(474.648, -68.6352)
+
+[node name="collision" parent="rigidbody3" index="0"]
+position = Vector2(-1.64825, 1.13518)
+shape = SubResource("RectangleShape2D_7h1mp")
+
+[node name="image" parent="rigidbody3" index="1"]
+position = Vector2(474.648, -68.6352)
+
+[node name="Sprite2D2" type="Sprite2D" parent="rigidbody3/image" index="0"]
 scale = Vector2(0.713593, 1.40609)
 texture = ExtResource("7_csalc")
 region_enabled = true
 region_rect = Rect2(793.26, 44.8029, 64.9169, 71.4086)
 
-[node name="Sprite2D3" type="Sprite2D" parent="."]
-position = Vector2(613, 41)
+[node name="rigidbody4" parent="." instance=ExtResource("6_1uy7d")]
+position = Vector2(614.556, 39.6427)
 rotation = -1.0472
+
+[node name="collision" parent="rigidbody4" index="0"]
+shape = SubResource("CapsuleShape2D_s16en")
+
+[node name="image" parent="rigidbody4" index="1"]
+position = Vector2(614.556, 39.6427)
+rotation = -1.0472
+
+[node name="Sprite2D3" type="Sprite2D" parent="rigidbody4/image" index="0"]
 scale = Vector2(0.53989, 0.960736)
 texture = ExtResource("7_csalc")
 region_enabled = true
@@ -5552,29 +5617,63 @@ texture = ExtResource("7_csalc")
 region_enabled = true
 region_rect = Rect2(453.825, 60.9458, 211.792, 280.766)
 
-[node name="Sprite2D6" type="Sprite2D" parent="."]
-position = Vector2(504, 235)
+[node name="rigidbody5" parent="." instance=ExtResource("6_1uy7d")]
+position = Vector2(504.695, 233.419)
+
+[node name="collision" parent="rigidbody5" index="0"]
+position = Vector2(0.805145, 1.08099)
+shape = SubResource("RectangleShape2D_0hw8l")
+
+[node name="image" parent="rigidbody5" index="1"]
+position = Vector2(504.695, 233.419)
+
+[node name="Sprite2D6" type="Sprite2D" parent="rigidbody5/image" index="0"]
 scale = Vector2(0.662354, 0.977444)
 texture = ExtResource("7_csalc")
 region_enabled = true
 region_rect = Rect2(570.658, 815.211, 384.633, 133.08)
 
-[node name="Sprite2D7" type="Sprite2D" parent="."]
-position = Vector2(504.383, 323.5)
+[node name="rigidbody6" parent="." instance=ExtResource("6_1uy7d")]
+position = Vector2(505.574, 325.551)
+
+[node name="collision" parent="rigidbody6" index="0"]
+position = Vector2(-0.573517, 0.449402)
+shape = SubResource("CapsuleShape2D_sil1e")
+
+[node name="image" parent="rigidbody6" index="1"]
+position = Vector2(505.574, 325.551)
+
+[node name="Sprite2D7" type="Sprite2D" parent="rigidbody6/image" index="0"]
 scale = Vector2(0.592045, 0.252066)
 texture = ExtResource("7_csalc")
 region_enabled = true
 region_rect = Rect2(923.94, 330.035, 46.2533, 242.627)
 
-[node name="Sprite2D8" type="Sprite2D" parent="."]
-position = Vector2(443, 155)
+[node name="rigidbody7" parent="." instance=ExtResource("6_1uy7d")]
+position = Vector2(444.424, 156.882)
+
+[node name="collision" parent="rigidbody7" index="0"]
+shape = SubResource("CapsuleShape2D_8mthl")
+
+[node name="image" parent="rigidbody7" index="1"]
+position = Vector2(444.424, 156.882)
+
+[node name="Sprite2D8" type="Sprite2D" parent="rigidbody7/image" index="0"]
 scale = Vector2(1.21538, 0.941823)
 texture = ExtResource("7_csalc")
 region_enabled = true
 region_rect = Rect2(321.334, 485.513, 62.4826, 76.2774)
 
-[node name="Sprite2D9" type="Sprite2D" parent="."]
-position = Vector2(560.162, 154)
+[node name="rigidbody8" parent="." instance=ExtResource("6_1uy7d")]
+position = Vector2(559.527, 153.856)
+
+[node name="collision" parent="rigidbody8" index="0"]
+shape = SubResource("CapsuleShape2D_3hkam")
+
+[node name="image" parent="rigidbody8" index="1"]
+position = Vector2(559.527, 153.856)
+
+[node name="Sprite2D9" type="Sprite2D" parent="rigidbody8/image" index="0"]
 scale = Vector2(1.22059, 0.941823)
 texture = ExtResource("7_csalc")
 region_enabled = true
@@ -5616,7 +5715,7 @@ position = Vector2(127, -3)
 shape = SubResource("RectangleShape2D_vhi1v")
 
 [node name="player" parent="." instance=ExtResource("8_n06sc")]
-position = Vector2(542, 172)
+position = Vector2(276, 84)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
 
@@ -5633,3 +5732,12 @@ shape = SubResource("RectangleShape2D_4kc4e")
 [connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]
 [connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_body_entered"]
 [connection signal="body_exited" from="Area2D2" to="Area2D2" method="_on_body_exited"]
+
+[editable path="rigidbody"]
+[editable path="rigidbody2"]
+[editable path="rigidbody3"]
+[editable path="rigidbody4"]
+[editable path="rigidbody5"]
+[editable path="rigidbody6"]
+[editable path="rigidbody7"]
+[editable path="rigidbody8"]

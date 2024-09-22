@@ -1,3 +1,4 @@
+@tool
 extends RigidBody2D
 
 class_name physics_object
@@ -8,9 +9,12 @@ class_name physics_object
 @onready var image = $image
 var y_offset_val = 0
 
+
+
 func _process(delta):
 	image.global_position = global_position - Vector2(0, y_offset_val)
 	image.rotation = rotation
+	image.get_child(0).global_position = image.global_position
 	pass
 
 func got_hit(z: Vector2):
