@@ -1,0 +1,9 @@
+res://Scenes/physicsobject.tscn
+res://Scenes/Room4.tscn
+res://Scenes/island.tscn
+res://Scenes/daves house.tscn
+res://Scenes/player.tscn
+res://Scenes/Room1.tscn
+res://Scenes/vase.tscn
+res://scripts/player.gd
+res://scripts/vase.gd
