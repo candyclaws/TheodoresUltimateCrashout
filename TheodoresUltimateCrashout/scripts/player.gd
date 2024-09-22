@@ -92,8 +92,8 @@ func _physics_process(delta: float) -> void:
 		else:
 			animated_sprite_2d.play("idle")
 	move_and_slide()
-	
-	
+
+
 
 
 func _on_timer_timeout() -> void:

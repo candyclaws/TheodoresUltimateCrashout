@@ -1,8 +1,10 @@
+
 [gd_scene load_steps=10 format=3 uid="uid://6mhedyt5y15f"]
 
 [ext_resource type="PackedScene" uid="uid://hy2guxv6j73r" path="res://Scenes/player.tscn" id="2_4gu50"]
+
 [ext_resource type="Texture2D" uid="uid://di8yclyd3w2qj" path="res://images/room.jpg" id="2_8kh5d"]
-[ext_resource type="PackedScene" uid="uid://dh5drmfhc44is" path="res://Scenes/vase.tscn" id="3_f616j"]
+[ext_resource type="PackedScene" path="res://Scenes/vase.tscn" id="3_f616j"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ep4om"]
 
@@ -31,10 +33,10 @@ position = Vector2(339, 1508)
 [node name="Camera2D" type="Camera2D" parent="player"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 5.0
-offset_top = 64.0
-offset_right = 2183.0
-offset_bottom = 1653.0
+offset_left = 71.0
+offset_top = 122.0
+offset_right = 2249.0
+offset_bottom = 1711.0
 texture = ExtResource("2_8kh5d")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]

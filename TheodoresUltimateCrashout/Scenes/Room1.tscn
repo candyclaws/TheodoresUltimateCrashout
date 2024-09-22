@@ -1,10 +1,12 @@
-[gd_scene load_steps=15 format=3 uid="uid://bnmgapgsp8hpc"]
+[gd_scene load_steps=18 format=3 uid="uid://bnmgapgsp8hpc"]
 
 [ext_resource type="Texture2D" uid="uid://dqnwe7secp7cs" path="res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 1.png" id="1_hrise"]
 [ext_resource type="Texture2D" uid="uid://c1y2g3c5fdsob" path="res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 2.png" id="2_il54i"]
 [ext_resource type="Texture2D" uid="uid://nwd26oj2gt50" path="res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 3.png" id="3_sho53"]
 [ext_resource type="Texture2D" uid="uid://dsm3jsgatxt6o" path="res://2dClassroomAssetPackByStyloo/Classroom/Classroom First Spritesheet 1.png" id="4_xej5v"]
 [ext_resource type="Texture2D" uid="uid://ddgvm5c2ejldk" path="res://Pixel Lands Interiors Demo/interiors_demo.png" id="5_mkwno"]
+[ext_resource type="Script" path="res://Scenes/area_2d.gd" id="6_h6luy"]
+[ext_resource type="PackedScene" uid="uid://drggp6x36cr4n" path="res://Scenes/player.tscn" id="7_bvbsx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_54q02"]
 texture = ExtResource("1_hrise")
@@ -5249,6 +5251,9 @@ sources/0 = SubResource("TileSetAtlasSource_swnil")
 normal = Vector2(-0.00369001, -0.999993)
 distance = -171.0
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tvmim"]
+size = Vector2(84.5, 88.5)
+
 [node name="Node2D" type="Node2D"]
 
 [node name="ColorRect" type="ColorRect" parent="."]
@@ -5376,3 +5381,18 @@ rotation = -2.66512
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D5"]
 rotation = 0.0523599
 shape = SubResource("WorldBoundaryShape2D_15kgg")
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("6_h6luy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(131.75, -6.25)
+shape = SubResource("RectangleShape2D_tvmim")
+
+[node name="player" parent="." instance=ExtResource("7_bvbsx")]
+position = Vector2(136, 174)
+
+[node name="Camera2D" type="Camera2D" parent="player"]
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]

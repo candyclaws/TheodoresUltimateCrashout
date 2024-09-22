@@ -1,8 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://b0tp7xaytoba1"]
+[gd_scene load_steps=14 format=3 uid="uid://b0tp7xaytoba1"]
 
 [ext_resource type="Texture2D" uid="uid://dqnwe7secp7cs" path="res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 1.png" id="1_ajd4v"]
 [ext_resource type="Texture2D" uid="uid://c1y2g3c5fdsob" path="res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 2.png" id="2_t23cd"]
 [ext_resource type="Texture2D" uid="uid://nwd26oj2gt50" path="res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 3.png" id="3_27pjw"]
+[ext_resource type="Texture2D" uid="uid://cla2d2hepgbsb" path="res://2dClassroomAssetPackByStyloo/Principal Office/Principal Office First Spritesheet 1.png" id="4_o0xai"]
+[ext_resource type="Texture2D" uid="uid://dsu2oqdu87i7y" path="res://2dClassroomAssetPackByStyloo/Principal Office/Principal Office Second Spritesheet 1.png" id="5_dwk6u"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ibg0g"]
 texture = ExtResource("1_ajd4v")
@@ -3799,6 +3801,13 @@ texture = ExtResource("3_27pjw")
 [sub_resource type="TileSet" id="TileSet_3y42k"]
 sources/0 = SubResource("TileSetAtlasSource_2w4pa")
 
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_pnyd5"]
+normal = Vector2(-0.00369001, -0.999993)
+distance = -171.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hxvj7"]
+size = Vector2(84.5, 15)
+
 [node name="Node2D2" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -3819,3 +3828,130 @@ scale = Vector2(0.921974, 0.996402)
 tile_set = SubResource("TileSet_3y42k")
 format = 2
 layer_0/tile_data = PackedInt32Array(-720922, 786432, 51, -655386, 786432, 52, -589850, 786432, 53, -524314, 786432, 54, -458778, 786432, 55, -393242, 786432, 56, -327706, 786432, 57, -262170, 786432, 51, -196634, 786432, 52, -131098, 786432, 53, -65562, 786432, 54, -26, 786432, 55, 65510, 786432, 56, 131046, 786432, 51, 196582, 786432, 52, 262118, 786432, 53, 327654, 786432, 54, 393190, 786432, 55, 458726, 786432, 56, 524262, 786432, 51, 589798, 786432, 52, 655334, 786432, 53, 720870, 786432, 54, 786406, 786432, 54, 851942, 786432, 55, 917478, 786432, 56, -655324, 786432, 51, -589788, 786432, 52, -524252, 786432, 53, -458716, 786432, 54, -393180, 786432, 55, -327644, 786432, 51, -262108, 786432, 52, -196572, 786432, 53, -131036, 786432, 54, -65500, 786432, 55, 36, 786432, 51, 65572, 786432, 52, 131108, 786432, 53, 196644, 786432, 54, 262180, 786432, 55, 327716, 786432, 56, 393252, 786432, 57, 458788, 786432, 51, 524324, 786432, 52, 589860, 786432, 53, 655396, 786432, 54, 720932, 786432, 55, 786468, 786432, 56, 852004, 786432, 57, 983014, 786432, 51, 1048550, 786432, 52, 1114086, 786432, 53, 1179622, 786432, 54, 1245158, 786432, 55, 1310694, 786432, 56, 1376230, 786432, 57, 917540, 786432, 51, 983076, 786432, 52, 1048612, 786432, 53, 1114148, 786432, 54, 1179684, 786432, 55, 1245220, 786432, 56, 1310756, 786432, 57)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(354, -114)
+scale = Vector2(0.467672, 0.424791)
+texture = ExtResource("4_o0xai")
+region_enabled = true
+region_rect = Rect2(519.505, 124.225, 464.372, 359.284)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(297, 321)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("WorldBoundaryShape2D_pnyd5")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+position = Vector2(20, 156)
+rotation = 1.5708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+shape = SubResource("WorldBoundaryShape2D_pnyd5")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+position = Vector2(579, 121)
+rotation = -1.5708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+shape = SubResource("WorldBoundaryShape2D_pnyd5")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="."]
+position = Vector2(302, 114)
+rotation = 3.14159
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
+shape = SubResource("WorldBoundaryShape2D_pnyd5")
+
+[node name="StaticBody2D6" type="StaticBody2D" parent="."]
+position = Vector2(22.9999, 144)
+rotation = 2.57087
+scale = Vector2(1, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D6"]
+rotation = 0.0523599
+shape = SubResource("WorldBoundaryShape2D_pnyd5")
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="."]
+position = Vector2(574, 143)
+rotation = -2.66512
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D5"]
+rotation = 0.0523599
+shape = SubResource("WorldBoundaryShape2D_pnyd5")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(136, 129)
+scale = Vector2(0.467672, 0.424791)
+texture = ExtResource("4_o0xai")
+region_enabled = true
+region_rect = Rect2(24.5861, 687.537, 413.091, 283.217)
+
+[node name="Sprite2D5" type="Sprite2D" parent="."]
+position = Vector2(267, 295)
+scale = Vector2(0.472319, 0.455618)
+texture = ExtResource("4_o0xai")
+region_enabled = true
+region_rect = Rect2(585.543, 689.598, 389.62, 262.876)
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+position = Vector2(79.4983, 17.6809)
+scale = Vector2(0.432022, 0.337386)
+texture = ExtResource("5_dwk6u")
+region_enabled = true
+region_rect = Rect2(217.975, 666.048, 206.545, 336.419)
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(565, 153)
+scale = Vector2(0.460234, 0.430849)
+texture = ExtResource("4_o0xai")
+region_enabled = true
+region_rect = Rect2(24.5861, 687.537, 413.091, 283.217)
+
+[node name="Sprite2D6" type="Sprite2D" parent="."]
+position = Vector2(288, 170)
+scale = Vector2(0.436826, 0.397163)
+texture = ExtResource("5_dwk6u")
+region_enabled = true
+region_rect = Rect2(217.975, 666.048, 206.545, 336.419)
+
+[node name="Sprite2D7" type="Sprite2D" parent="."]
+position = Vector2(556, 13)
+scale = Vector2(0.436826, 0.397163)
+texture = ExtResource("5_dwk6u")
+region_enabled = true
+region_rect = Rect2(217.975, 666.048, 206.545, 336.419)
+
+[node name="Sprite2D8" type="Sprite2D" parent="."]
+position = Vector2(-90, 41)
+scale = Vector2(0.436826, 0.397163)
+texture = ExtResource("5_dwk6u")
+region_enabled = true
+region_rect = Rect2(864.066, 498.7, 145.521, 236.275)
+
+[node name="Sprite2D9" type="Sprite2D" parent="."]
+position = Vector2(633, 237)
+scale = Vector2(0.436826, 0.397163)
+texture = ExtResource("5_dwk6u")
+region_enabled = true
+region_rect = Rect2(217.975, 666.048, 206.545, 336.419)
+
+[node name="Sprite2D10" type="Sprite2D" parent="."]
+position = Vector2(-88, 145)
+scale = Vector2(0.436826, 0.397163)
+texture = ExtResource("5_dwk6u")
+region_enabled = true
+region_rect = Rect2(864.066, 498.7, 145.521, 236.275)
+
+[node name="Sprite2D11" type="Sprite2D" parent="."]
+position = Vector2(-87, 268)
+scale = Vector2(0.436826, 0.397163)
+texture = ExtResource("5_dwk6u")
+region_enabled = true
+region_rect = Rect2(864.066, 498.7, 145.521, 236.275)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(131.75, -43)
+shape = SubResource("RectangleShape2D_hxvj7")
