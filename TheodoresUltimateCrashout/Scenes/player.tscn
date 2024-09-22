@@ -1,6 +1,4 @@
-
-[gd_scene load_steps=61 format=3 uid="uid://hy2guxv6j73r"]
-
+[gd_scene load_steps=62 format=3 uid="uid://hy2guxv6j73r"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_gklno"]
 [ext_resource type="Texture2D" uid="uid://bwdohrmh74twq" path="res://images/frames/attack/theo0001.png0001.png" id="2_c6cj0"]
@@ -45,12 +43,11 @@
 [ext_resource type="Texture2D" uid="uid://bbflym4ygxkh1" path="res://images/frames/walk/theo0001.png0011.png" id="41_wbaqw"]
 [ext_resource type="Texture2D" uid="uid://byvhtq5nf06q4" path="res://images/frames/walk/theo0001.png0012.png" id="42_of6o0"]
 [ext_resource type="Texture2D" uid="uid://dqi82gekxaxe4" path="res://images/frames/walk/theo0001.png0013.png" id="43_w2lhd"]
+[ext_resource type="AudioStream" uid="uid://bq6ic5ppx6q3" path="res://sounds/golf.mp3" id="44_j8hfa"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_burhp"]
-load_path = "res://.godot/imported/theo0001.png0014.png-02fb5020500799e95f61ca5f7ecdfe1f.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tps8a"]
-load_path = "res://.godot/imported/theo0001.png0013.png-e8fb6a200a541b73489edac0ed0ed39f.ctex"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mty2f"]
 atlas = ExtResource("2_hmuv8")
@@ -345,5 +342,25 @@ target_position = Vector2(0, 22)
 position = Vector2(3, -34)
 scale = Vector2(30, 3)
 target_position = Vector2(-0.0333333, -24.6667)
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+emitting = false
+amount = 50
+one_shot = true
+explosiveness = 1.0
+lifetime_randomness = 0.34
+direction = Vector2(3.36, -2.335)
+spread = 35.0
+gravity = Vector2(0, 600)
+initial_velocity_min = 131.32
+initial_velocity_max = 535.36
+scale_amount_min = 3.0
+scale_amount_max = 15.0
+color = Color(0.207444, 0.136436, 0.0093188, 1)
+hue_variation_min = -1.0
+hue_variation_max = 1.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("44_j8hfa")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

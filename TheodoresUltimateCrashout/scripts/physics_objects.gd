@@ -29,6 +29,12 @@ func got_hit(z: Vector2):
 	linear_velocity = z * initial_velocity
 	health -= 1
 	Gamestate.damage_caused += price / health / 2
+	if health <= 0:
+		Gamestate.damage_caused3 += price / 2
+		var children = get_children()
+		for child in children:
+			child.free()
+		queue_free()
 
 func y_back_down():
 	var tween2 = get_tree().create_tween().bind_node(self).set_trans(Tween.TRANS_BOUNCE)

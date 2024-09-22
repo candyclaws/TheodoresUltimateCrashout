@@ -66,7 +66,7 @@ var is_attacking = false;
 @onready var ray_cast_left: RayCast2D = $RayCastLeft
 @onready var ray_cast_down: RayCast2D = $RayCastDown
 @onready var ray_cast_up: RayCast2D = $RayCastUp
-
+@onready var particles = $CPUParticles2D
 
 func _physics_process(delta: float) -> void:
 	if is_attacking:
@@ -108,7 +108,11 @@ func bat_collision():
 		if i.is_colliding():
 			var object = i.get_collider()
 			if object is RigidBody2D:
-				object.got_hit(position.direction_to(object.position))
+				var direction = position.direction_to(object.position)
+				particles.direction = position.direction_to(object.position)
+				particles.emitting = true
+				$AudioStreamPlayer.play()
+				object.got_hit(direction)
 				
 				
 #	if(ray_cast_right.is_colliding() && ray_cast_right.get_collider() is RigidBody2D):
