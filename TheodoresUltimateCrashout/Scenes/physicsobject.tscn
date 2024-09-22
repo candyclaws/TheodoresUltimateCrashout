@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://cxnqq3m33ygmy"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ifxr3"]
+radius = 11.0
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_6cxsq"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+linear_velocity = Vector2(0, 29.685)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+shape = SubResource("CapsuleShape2D_ifxr3")
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D"]
+position = Vector2(-1.19209e-07, -2.98023e-08)
+scale = Vector2(0.0449219, 0.0644531)
+texture = SubResource("NoiseTexture2D_6cxsq")

@@ -5364,7 +5364,6 @@ shape = SubResource("WorldBoundaryShape2D_15kgg")
 [node name="StaticBody2D6" type="StaticBody2D" parent="."]
 position = Vector2(22.9999, 144)
 rotation = 2.57087
-scale = Vector2(1, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D6"]
 rotation = 0.0523599
