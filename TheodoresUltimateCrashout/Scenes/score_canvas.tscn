@@ -1,9 +1,23 @@
-[gd_scene load_steps=3 format=3 uid="uid://waqe6x35b1kn"]
+[gd_scene load_steps=4 format=3 uid="uid://waqe6x35b1kn"]
 
 [ext_resource type="Script" path="res://Scripts/score_canvas.gd" id="1_uroqn"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_rjh3b"]
 font_size = 30
+
+[sub_resource type="GDScript" id="GDScript_b1ujp"]
+script/source = "extends Label
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	text = \"Time left: \" + \"%.2f\" % $Timer.time_left
+"
 
 [node name="score_canvas" type="CanvasLayer"]
 script = ExtResource("1_uroqn")
@@ -13,3 +27,15 @@ offset_right = 40.0
 offset_bottom = 23.0
 text = "Damage in assets: $0.00"
 label_settings = SubResource("LabelSettings_rjh3b")
+
+[node name="timer" type="Label" parent="."]
+offset_left = 1012.0
+offset_top = 4.0
+offset_right = 1178.0
+offset_bottom = 53.0
+text = "te"
+script = SubResource("GDScript_b1ujp")
+
+[node name="Timer" type="Timer" parent="timer"]
+wait_time = 45.0
+autostart = true
