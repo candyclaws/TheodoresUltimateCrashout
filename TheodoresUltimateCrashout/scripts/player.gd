@@ -120,3 +120,7 @@ func bat_collision():
 #	elif(ray_cast_down.is_colliding() && ray_cast_down.get_collider() is RigidBody2D):
 #		ray_cast_down.get_collider().got_hit(4)
 	
+
+
+func _on_roomnext_2_body_entered(body: Node2D) -> void:
+	pass # Replace with function body.

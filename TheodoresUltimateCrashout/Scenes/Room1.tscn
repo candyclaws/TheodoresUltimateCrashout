@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://bnmgapgsp8hpc"]
+[gd_scene load_steps=19 format=3 uid="uid://bnmgapgsp8hpc"]
 
 [ext_resource type="Texture2D" uid="uid://dqnwe7secp7cs" path="res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 1.png" id="1_hrise"]
 [ext_resource type="Texture2D" uid="uid://c1y2g3c5fdsob" path="res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 2.png" id="2_il54i"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://ddgvm5c2ejldk" path="res://Pixel Lands Interiors Demo/interiors_demo.png" id="5_mkwno"]
 [ext_resource type="Script" path="res://Scenes/area_2d.gd" id="6_h6luy"]
 [ext_resource type="PackedScene" uid="uid://hy2guxv6j73r" path="res://Scenes/player.tscn" id="7_bvbsx"]
+[ext_resource type="Script" path="res://Scenes/room1to5.gd" id="8_jjhii"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_54q02"]
 texture = ExtResource("1_hrise")
@@ -5384,15 +5385,25 @@ shape = SubResource("WorldBoundaryShape2D_15kgg")
 
 [node name="Area2D" type="Area2D" parent="."]
 script = ExtResource("6_h6luy")
+nextroom = "res://Scenes/Room2.tscn"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(131.75, -6.25)
 shape = SubResource("RectangleShape2D_tvmim")
 
 [node name="player" parent="." instance=ExtResource("7_bvbsx")]
-position = Vector2(136, 174)
+position = Vector2(519, 74)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
 
+[node name="Area2D2" type="Area2D" parent="."]
+script = ExtResource("8_jjhii")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2(545, 446)
+shape = SubResource("RectangleShape2D_tvmim")
+
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
 [connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]
+[connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D2" to="Area2D2" method="_on_body_exited"]
