@@ -1,10 +1,13 @@
-[gd_scene load_steps=14 format=3 uid="uid://b0tp7xaytoba1"]
+[gd_scene load_steps=17 format=3 uid="uid://b0tp7xaytoba1"]
 
 [ext_resource type="Texture2D" uid="uid://dqnwe7secp7cs" path="res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 1.png" id="1_ajd4v"]
 [ext_resource type="Texture2D" uid="uid://c1y2g3c5fdsob" path="res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 2.png" id="2_t23cd"]
 [ext_resource type="Texture2D" uid="uid://nwd26oj2gt50" path="res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 3.png" id="3_27pjw"]
 [ext_resource type="Texture2D" uid="uid://cla2d2hepgbsb" path="res://2dClassroomAssetPackByStyloo/Principal Office/Principal Office First Spritesheet 1.png" id="4_o0xai"]
 [ext_resource type="Texture2D" uid="uid://dsu2oqdu87i7y" path="res://2dClassroomAssetPackByStyloo/Principal Office/Principal Office Second Spritesheet 1.png" id="5_dwk6u"]
+[ext_resource type="Script" path="res://Scenes/room5to4.gd" id="6_yorso"]
+[ext_resource type="Script" path="res://Scenes/room5to1.gd" id="7_xpmsk"]
+[ext_resource type="PackedScene" uid="uid://hy2guxv6j73r" path="res://Scenes/player.tscn" id="8_07v0j"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ibg0g"]
 texture = ExtResource("1_ajd4v")
@@ -3806,7 +3809,7 @@ normal = Vector2(-0.00369001, -0.999993)
 distance = -171.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hxvj7"]
-size = Vector2(84.5, 15)
+size = Vector2(96.25, 136.25)
 
 [node name="Node2D2" type="Node2D"]
 
@@ -3950,7 +3953,27 @@ region_enabled = true
 region_rect = Rect2(864.066, 498.7, 145.521, 236.275)
 
 [node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("6_yorso")
+nextroom = "res://Scenes/Room4.tscn"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(131.75, -43)
+position = Vector2(131.75, -23.25)
 shape = SubResource("RectangleShape2D_hxvj7")
+
+[node name="Area2D2" type="Area2D" parent="."]
+script = ExtResource("7_xpmsk")
+nextroom = "res://Scenes/Room1.tscn"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2(541.125, 405.125)
+shape = SubResource("RectangleShape2D_hxvj7")
+
+[node name="player" parent="." instance=ExtResource("8_07v0j")]
+position = Vector2(363, 139)
+
+[node name="Camera2D" type="Camera2D" parent="player"]
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]
+[connection signal="body_entered" from="Area2D2" to="Area2D" method="_on_area_2d_2_body_entered"]
+[connection signal="body_exited" from="Area2D2" to="Area2D" method="_on_area_2d_2_body_exited"]
