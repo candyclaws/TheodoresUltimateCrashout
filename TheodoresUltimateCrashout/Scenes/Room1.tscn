@@ -5328,7 +5328,6 @@ position = Vector2(-108.964, 192.979)
 
 [node name="collision" parent="rigidbody3" index="0"]
 position = Vector2(-1.03593, 3.52065)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_evmq0")
 
 [node name="image" parent="rigidbody3" index="1"]

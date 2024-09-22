@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://waqe6x35b1kn"]
+
+[ext_resource type="Script" path="res://Scripts/score_canvas.gd" id="1_uroqn"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_rjh3b"]
+font_size = 30
+
+[node name="score_canvas" type="CanvasLayer"]
+script = ExtResource("1_uroqn")
+
+[node name="score" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Damage in assets: $0.00"
+label_settings = SubResource("LabelSettings_rjh3b")
