@@ -100,9 +100,11 @@ func _on_timer_timeout() -> void:
 	bat_collision()
 	is_attacking = false; 
 	
+	
+	
 func bat_collision():
 	if(ray_cast_right.is_colliding() && ray_cast_right.get_collider() is RigidBody2D):
-		ray_cast_right.get_collider().got_hit(1)
+		ray_cast_right.get_collider().got_hit((ray_cast_right.get_collider().position - position))
 	elif(ray_cast_left.is_colliding() && ray_cast_left.get_collider() is RigidBody2D):
 		ray_cast_left.get_collider().got_hit(2)
 	elif(ray_cast_up.is_colliding() && ray_cast_up.get_collider() is RigidBody2D):
