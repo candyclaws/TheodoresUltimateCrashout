@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://x5xlnr2512ed"]
+
+[ext_resource type="Script" path="res://scripts/cutscene_1.gd" id="1_71ctk"]
+
+[sub_resource type="VideoStreamTheora" id="VideoStreamTheora_xmxoc"]
+file = "res://videos/vorbis.ogg"
+
+[node name="cutscene-1" type="Node2D"]
+script = ExtResource("1_71ctk")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+offset_left = -3.0
+offset_top = -3.0
+offset_right = 1917.0
+offset_bottom = 1085.0
+stream = SubResource("VideoStreamTheora_xmxoc")
+autoplay = true
+
+[node name="Camera2D" type="Camera2D" parent="VideoStreamPlayer"]
+position = Vector2(924, 547)
+scale = Vector2(500, 500)
+zoom = Vector2(0.7, 0.6)
