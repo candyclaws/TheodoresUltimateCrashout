@@ -1,6 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://bm5kub3bqgv4"]
 
-[ext_resource type="PackedScene" uid="uid://drggp6x36cr4n" path="res://Scenes/player.tscn" id="2_4gu50"]
+[gd_scene load_steps=10 format=3 uid="uid://6mhedyt5y15f"]
+
+[ext_resource type="PackedScene" uid="uid://hy2guxv6j73r" path="res://Scenes/player.tscn" id="2_4gu50"]
+
 [ext_resource type="Texture2D" uid="uid://di8yclyd3w2qj" path="res://images/room.jpg" id="2_8kh5d"]
 [ext_resource type="PackedScene" path="res://Scenes/vase.tscn" id="3_f616j"]
 
