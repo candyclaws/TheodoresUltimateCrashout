@@ -11,13 +11,14 @@ config_version=5
 [application]
 
 config/name="Theodores Ultimate Crashout"
-run/main_scene="res://Scenes/island.tscn"
+run/main_scene="res://Scenes/cutscene_1.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
 Gamestate="*res://scripts/gamestates.gd"
+score_canvas="*res://scenes/score_canvas.tscn"
 
 [input]
 
