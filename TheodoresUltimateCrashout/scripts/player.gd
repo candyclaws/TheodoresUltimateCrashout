@@ -103,16 +103,6 @@ func _on_timer_timeout() -> void:
 	
 	
 func bat_collision():
-<<<<<<< HEAD
-	if(ray_cast_right.is_colliding() && ray_cast_right.get_collider() is RigidBody2D):
-		ray_cast_right.get_collider().got_hit((ray_cast_right.get_collider().position - position))
-	elif(ray_cast_left.is_colliding() && ray_cast_left.get_collider() is RigidBody2D):
-		ray_cast_left.get_collider().got_hit(2)
-	elif(ray_cast_up.is_colliding() && ray_cast_up.get_collider() is RigidBody2D):
-		ray_cast_up.get_collider().got_hit(3)
-	elif(ray_cast_down.is_colliding() && ray_cast_down.get_collider() is RigidBody2D):
-		ray_cast_down.get_collider().got_hit(4)
-=======
 	var ray_casts = [ray_cast_right, ray_cast_left, ray_cast_up, ray_cast_down]
 	for i in ray_casts:
 		if i.is_colliding():
@@ -129,5 +119,4 @@ func bat_collision():
 #		ray_cast_up.get_collider().got_hit(3)
 #	elif(ray_cast_down.is_colliding() && ray_cast_down.get_collider() is RigidBody2D):
 #		ray_cast_down.get_collider().got_hit(4)
->>>>>>> refs/remotes/origin/main
 	
