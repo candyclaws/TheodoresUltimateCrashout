@@ -1,34 +1,80 @@
-[gd_scene load_steps=5 format=3 uid="uid://e7pj84qea5gd"]
+[gd_scene load_steps=10 format=3 uid="uid://e7pj84qea5gd"]
 
 [ext_resource type="PackedScene" uid="uid://dx1syfucm6x8n" path="res://Scenes/player.tscn" id="2_4gu50"]
+[ext_resource type="Texture2D" uid="uid://di8yclyd3w2qj" path="res://images/room.jpg" id="2_8kh5d"]
+[ext_resource type="PackedScene" uid="uid://dh5drmfhc44is" path="res://Scenes/vase.tscn" id="3_f616j"]
 
-[sub_resource type="FastNoiseLite" id="FastNoiseLite_mh6d1"]
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ep4om"]
 
-[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_1io32"]
-noise = SubResource("FastNoiseLite_mh6d1")
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3bshu"]
+size = Vector2(1240, 851.5)
 
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_otgfp"]
-normal = Vector2(-0.999924, -0.0123447)
-distance = -113.777
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b5hog"]
+size = Vector2(509.255, 548.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rdxki"]
+size = Vector2(557.285, 366.102)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yfdhh"]
+size = Vector2(263, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ty4eb"]
+size = Vector2(56.5, 275)
 
 [node name="Node2D" type="Node2D"]
-
-[node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 1.0
-offset_top = -2.0
-offset_right = 888.0
-offset_bottom = 787.0
-texture = SubResource("NoiseTexture2D_1io32")
-
-[node name="Area2D2" type="Area2D" parent="."]
-position = Vector2(287, 62)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
-position = Vector2(483, 481)
-shape = SubResource("WorldBoundaryShape2D_otgfp")
+position = Vector2(-11, -56)
 
 [node name="player" parent="." instance=ExtResource("2_4gu50")]
-position = Vector2(432, 673)
+z_index = 1
+position = Vector2(339, 1508)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
-zoom = Vector2(3, 3)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 5.0
+offset_top = 64.0
+offset_right = 2183.0
+offset_bottom = 1653.0
+texture = ExtResource("2_8kh5d")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(863, 795)
+physics_material_override = SubResource("PhysicsMaterial_ep4om")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(232, 27)
+shape = SubResource("RectangleShape2D_3bshu")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+position = Vector2(145, 773)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2(4.80713, 287.291)
+rotation = -0.261799
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_b5hog")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+position = Vector2(1185, 987)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+position = Vector2(837, 157)
+rotation = 0.261799
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_rdxki")
+
+[node name="vase" parent="." instance=ExtResource("3_f616j")]
+position = Vector2(769, 1300)
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="."]
+position = Vector2(1049, 1636)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
+position = Vector2(1002, 16)
+shape = SubResource("RectangleShape2D_yfdhh")
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D5"]
+position = Vector2(2154.25, 1498)
+shape = SubResource("RectangleShape2D_ty4eb")

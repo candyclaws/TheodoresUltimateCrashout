@@ -1,7 +1,31 @@
-[gd_scene load_steps=19 format=3 uid="uid://dx1syfucm6x8n"]
+[gd_scene load_steps=25 format=3 uid="uid://dx1syfucm6x8n"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_gklno"]
 [ext_resource type="Texture2D" uid="uid://chtafscqt2gsv" path="res://images/spritesheet.png" id="2_hmuv8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gehly"]
+atlas = ExtResource("2_hmuv8")
+region = Rect2(512, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xjfba"]
+atlas = ExtResource("2_hmuv8")
+region = Rect2(2304, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qi40s"]
+atlas = ExtResource("2_hmuv8")
+region = Rect2(2560, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2devb"]
+atlas = ExtResource("2_hmuv8")
+region = Rect2(1024, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_efq2o"]
+atlas = ExtResource("2_hmuv8")
+region = Rect2(768, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_us2o8"]
+atlas = ExtResource("2_hmuv8")
+region = Rect2(1280, 0, 256, 256)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_610ru"]
 atlas = ExtResource("2_hmuv8")
@@ -63,6 +87,29 @@ region = Rect2(3072, 0, 256, 256)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_gehly")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xjfba")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qi40s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2devb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_efq2o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_us2o8")
+}],
+"loop": true,
+"name": &"attack",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_610ru")
 }],
 "loop": true,
@@ -119,16 +166,44 @@ size = Vector2(70.25, 119)
 
 [node name="player" type="CharacterBody2D"]
 texture_filter = 1
+collision_layer = 3
 script = ExtResource("1_gklno")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(3, -4)
-scale = Vector2(0.519531, 0.611328)
+z_index = 1
+position = Vector2(6, 4)
+scale = Vector2(0.751709, 0.655395)
 sprite_frames = SubResource("SpriteFrames_4r3r4")
-animation = &"idle"
-autoplay = "walk"
+animation = &"attack"
+autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+z_index = 1
 texture_filter = 1
-position = Vector2(6, -1.5)
+position = Vector2(0, 12)
 shape = SubResource("RectangleShape2D_gdkkt")
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[node name="RayCastRight" type="RayCast2D" parent="."]
+position = Vector2(13, 10)
+scale = Vector2(3, 30)
+target_position = Vector2(31.3333, 0.0333333)
+
+[node name="RayCastLeft" type="RayCast2D" parent="."]
+position = Vector2(-21, 13)
+scale = Vector2(3, 30)
+target_position = Vector2(-29, 0)
+
+[node name="RayCastDown" type="RayCast2D" parent="."]
+position = Vector2(-1, 50)
+scale = Vector2(30, 3)
+target_position = Vector2(0, 22)
+
+[node name="RayCastUp" type="RayCast2D" parent="."]
+position = Vector2(3, -34)
+scale = Vector2(30, 3)
+target_position = Vector2(-0.0333333, -24.6667)
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
