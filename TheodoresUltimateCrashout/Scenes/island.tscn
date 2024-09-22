@@ -51,7 +51,6 @@ position = Vector2(145, 773)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
 position = Vector2(4.80713, 287.291)
 rotation = -0.261799
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_b5hog")
 
 [node name="StaticBody2D3" type="StaticBody2D" parent="."]
@@ -60,7 +59,6 @@ position = Vector2(1185, 987)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
 position = Vector2(837, 157)
 rotation = 0.261799
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_rdxki")
 
 [node name="vase" parent="." instance=ExtResource("3_f616j")]
