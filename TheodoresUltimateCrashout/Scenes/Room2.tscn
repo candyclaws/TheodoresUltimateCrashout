@@ -7,7 +7,9 @@
 [ext_resource type="Texture2D" uid="uid://4rimwrsxxsj5" path="res://2dClassroomAssetPackByStyloo/assetsFurniture/4 BigSet.png" id="5_e7g5t"]
 [ext_resource type="Texture2D" uid="uid://ddgvm5c2ejldk" path="res://Pixel Lands Interiors Demo/interiors_demo.png" id="6_2y8ss"]
 [ext_resource type="Texture2D" uid="uid://fivuj6uf8s33" path="res://2dClassroomAssetPackByStyloo/Toilet/Toilet Spritesheet 1.png" id="7_csalc"]
+
 [ext_resource type="Script" path="res://Scenes/room2to1.gd" id="8_b5f3e"]
+
 [ext_resource type="PackedScene" uid="uid://hy2guxv6j73r" path="res://Scenes/player.tscn" id="8_n06sc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t7j57"]

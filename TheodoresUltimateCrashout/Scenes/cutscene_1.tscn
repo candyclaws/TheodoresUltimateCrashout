@@ -20,3 +20,5 @@ autoplay = true
 position = Vector2(924, 547)
 scale = Vector2(500, 500)
 zoom = Vector2(0.7, 0.6)
+
+[connection signal="finished" from="VideoStreamPlayer" to="." method="_on_video_stream_player_finished"]

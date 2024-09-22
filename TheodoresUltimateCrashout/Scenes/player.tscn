@@ -1,6 +1,4 @@
-
 [gd_scene load_steps=61 format=3 uid="uid://hy2guxv6j73r"]
-
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_gklno"]
 [ext_resource type="Texture2D" uid="uid://bwdohrmh74twq" path="res://images/frames/attack/theo0001.png0001.png" id="2_c6cj0"]
@@ -47,10 +45,8 @@
 [ext_resource type="Texture2D" uid="uid://dqi82gekxaxe4" path="res://images/frames/walk/theo0001.png0013.png" id="43_w2lhd"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_burhp"]
-load_path = "res://.godot/imported/theo0001.png0014.png-02fb5020500799e95f61ca5f7ecdfe1f.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tps8a"]
-load_path = "res://.godot/imported/theo0001.png0013.png-e8fb6a200a541b73489edac0ed0ed39f.ctex"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mty2f"]
 atlas = ExtResource("2_hmuv8")
@@ -328,22 +324,22 @@ one_shot = true
 
 [node name="RayCastRight" type="RayCast2D" parent="."]
 position = Vector2(13, 10)
-scale = Vector2(3, 30)
+scale = Vector2(5, 50)
 target_position = Vector2(31.3333, 0.0333333)
 
 [node name="RayCastLeft" type="RayCast2D" parent="."]
 position = Vector2(-21, 13)
-scale = Vector2(3, 30)
+scale = Vector2(5, 50)
 target_position = Vector2(-29, 0)
 
 [node name="RayCastDown" type="RayCast2D" parent="."]
 position = Vector2(-1, 50)
-scale = Vector2(30, 3)
+scale = Vector2(50, 5)
 target_position = Vector2(0, 22)
 
 [node name="RayCastUp" type="RayCast2D" parent="."]
 position = Vector2(3, -34)
-scale = Vector2(30, 3)
+scale = Vector2(50, 5)
 target_position = Vector2(-0.0333333, -24.6667)
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
