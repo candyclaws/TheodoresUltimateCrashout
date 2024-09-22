@@ -1,10 +1,11 @@
-[gd_scene load_steps=16 format=3 uid="uid://dchf5orf383hj"]
+[gd_scene load_steps=19 format=3 uid="uid://dchf5orf383hj"]
 
 [ext_resource type="Texture2D" uid="uid://dqnwe7secp7cs" path="res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 1.png" id="1_0rdak"]
 [ext_resource type="Texture2D" uid="uid://c1y2g3c5fdsob" path="res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 2.png" id="2_ki7n2"]
 [ext_resource type="Texture2D" uid="uid://nwd26oj2gt50" path="res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 3.png" id="3_yxo6y"]
 [ext_resource type="Texture2D" uid="uid://dsm3jsgatxt6o" path="res://2dClassroomAssetPackByStyloo/Classroom/Classroom First Spritesheet 1.png" id="4_oruwk"]
 [ext_resource type="Texture2D" uid="uid://4rimwrsxxsj5" path="res://2dClassroomAssetPackByStyloo/assetsFurniture/4 BigSet.png" id="5_upqi6"]
+[ext_resource type="Texture2D" uid="uid://drums655nmceh" path="res://2dClassroomAssetPackByStyloo/Art Room/Art Room Spritesheet 1.png" id="6_d4pn1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vekoh"]
 texture = ExtResource("1_0rdak")
@@ -5457,6 +5458,13 @@ texture = ExtResource("5_upqi6")
 [sub_resource type="TileSet" id="TileSet_ijo5u"]
 sources/0 = SubResource("TileSetAtlasSource_4wumm")
 
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_c2rsx"]
+normal = Vector2(-0.00369001, -0.999993)
+distance = -171.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0k5os"]
+size = Vector2(84.5, 15)
+
 [node name="Node2D" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -5490,37 +5498,107 @@ scale = Vector2(0.921974, 0.996402)
 tile_set = SubResource("TileSet_ijo5u")
 format = 2
 
-[node name="Sprite2D5" type="Sprite2D" parent="."]
-position = Vector2(387, -113)
-scale = Vector2(0.61939, 0.525044)
-flip_h = true
-region_enabled = true
-region_rect = Rect2(504.033, 114.939, 494.002, 385.109)
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(321, 320)
 
-[node name="Sprite2D6" type="Sprite2D" parent="."]
-position = Vector2(347, 79)
-scale = Vector2(0.499599, 0.347137)
-flip_h = true
-region_enabled = true
-region_rect = Rect2(25.0098, 692.679, 416.98, 260.281)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("WorldBoundaryShape2D_c2rsx")
 
-[node name="Sprite2D7" type="Sprite2D" parent="."]
-position = Vector2(580, 83)
-scale = Vector2(0.535656, 0.394008)
-flip_h = true
-region_enabled = true
-region_rect = Rect2(570.431, 680.651, 427.604, 284.184)
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+position = Vector2(188, 157)
+rotation = 1.5708
 
-[node name="Sprite2D9" type="Sprite2D" parent="."]
-position = Vector2(590.028, 213.763)
-scale = Vector2(0.524461, 0.367868)
-flip_h = true
-region_enabled = true
-region_rect = Rect2(570.431, 680.651, 427.604, 284.184)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+shape = SubResource("WorldBoundaryShape2D_c2rsx")
 
-[node name="Sprite2D8" type="Sprite2D" parent="."]
-position = Vector2(348, 212)
-scale = Vector2(0.499599, 0.347137)
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+position = Vector2(578, 127)
+rotation = -1.5708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+shape = SubResource("WorldBoundaryShape2D_c2rsx")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="."]
+position = Vector2(323, 117)
+rotation = -3.14159
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
+shape = SubResource("WorldBoundaryShape2D_c2rsx")
+
+[node name="StaticBody2D7" type="StaticBody2D" parent="."]
+position = Vector2(566, 142)
+rotation = -0.0523599
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D7"]
+rotation = -2.56563
+shape = SubResource("WorldBoundaryShape2D_c2rsx")
+
+[node name="Sprite2D10" type="Sprite2D" parent="."]
+position = Vector2(302, 243.883)
+scale = Vector2(0.554348, 0.566005)
+texture = ExtResource("6_d4pn1")
 flip_h = true
 region_enabled = true
-region_rect = Rect2(25.0098, 692.679, 416.98, 260.281)
+region_rect = Rect2(688.815, 810.083, 184.639, 201.851)
+
+[node name="Sprite2D11" type="Sprite2D" parent="."]
+position = Vector2(140, 245)
+scale = Vector2(0.671152, 0.593948)
+texture = ExtResource("6_d4pn1")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(688.815, 810.083, 184.639, 201.851)
+
+[node name="Sprite2D12" type="Sprite2D" parent="."]
+position = Vector2(618.662, 256.864)
+scale = Vector2(0.44974, 0.403545)
+texture = ExtResource("6_d4pn1")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(706.027, 486.182, 292.606, 262.876)
+
+[node name="Sprite2D13" type="Sprite2D" parent="."]
+position = Vector2(502, 239)
+scale = Vector2(1.22454, 0.765355)
+texture = ExtResource("6_d4pn1")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(962.229, 289.477, 38.2995, 85.3445)
+
+[node name="Sprite2D14" type="Sprite2D" parent="."]
+position = Vector2(500, 130)
+scale = Vector2(1.22454, 0.765355)
+texture = ExtResource("6_d4pn1")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(962.229, 289.477, 38.2995, 85.3445)
+
+[node name="Sprite2D15" type="Sprite2D" parent="."]
+position = Vector2(424, 247)
+scale = Vector2(0.740479, 0.736794)
+texture = ExtResource("6_d4pn1")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(187.42, 595.135, 99.7969, 66.5312)
+
+[node name="Sprite2D16" type="Sprite2D" parent="."]
+position = Vector2(420, 139)
+scale = Vector2(0.740479, 0.736794)
+texture = ExtResource("6_d4pn1")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(187.42, 595.135, 99.7969, 66.5312)
+
+[node name="Sprite2D17" type="Sprite2D" parent="."]
+position = Vector2(617, 141)
+scale = Vector2(0.491199, 0.46509)
+texture = ExtResource("6_d4pn1")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(706.027, 486.182, 292.606, 262.876)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(131.75, -43)
+shape = SubResource("RectangleShape2D_0k5os")

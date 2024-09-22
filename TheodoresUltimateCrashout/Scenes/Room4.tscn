@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://bjvh1vc1l5elt"]
+[gd_scene load_steps=18 format=3 uid="uid://bjvh1vc1l5elt"]
 
 [ext_resource type="Texture2D" uid="uid://dqnwe7secp7cs" path="res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 1.png" id="1_3irpr"]
 [ext_resource type="Texture2D" uid="uid://c1y2g3c5fdsob" path="res://2dClassroomAssetPackByStyloo/WallFloorDoorWstroke/Wallfloordoorw First Spritesheet 2.png" id="2_7ykij"]
@@ -5251,6 +5251,9 @@ sources/0 = SubResource("TileSetAtlasSource_4hj7v")
 normal = Vector2(-0.00369001, -0.999993)
 distance = -171.0
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0sgq7"]
+size = Vector2(84.5, 15)
+
 [node name="Node2D" type="Node2D"]
 
 [node name="ColorRect" type="ColorRect" parent="."]
@@ -5366,3 +5369,9 @@ rotation = -3.14159
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
 shape = SubResource("WorldBoundaryShape2D_xipew")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(131.75, -43)
+shape = SubResource("RectangleShape2D_0sgq7")
