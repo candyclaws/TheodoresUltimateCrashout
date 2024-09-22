@@ -1,10 +1,9 @@
-
-[gd_scene load_steps=10 format=3 uid="uid://6mhedyt5y15f"]
+[gd_scene load_steps=14 format=3 uid="uid://6mhedyt5y15f"]
 
 [ext_resource type="PackedScene" uid="uid://hy2guxv6j73r" path="res://Scenes/player.tscn" id="2_4gu50"]
-
 [ext_resource type="Texture2D" uid="uid://di8yclyd3w2qj" path="res://images/room.jpg" id="2_8kh5d"]
-[ext_resource type="PackedScene" path="res://Scenes/vase.tscn" id="3_f616j"]
+[ext_resource type="PackedScene" uid="uid://dh5drmfhc44is" path="res://Scenes/vase.tscn" id="3_f616j"]
+[ext_resource type="PackedScene" uid="uid://cxnqq3m33ygmy" path="res://Scenes/physicsobject.tscn" id="4_a8ta6"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ep4om"]
 
@@ -22,6 +21,14 @@ size = Vector2(263, 20)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ty4eb"]
 size = Vector2(56.5, 275)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4p2hp"]
+size = Vector2(153, 168)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_ioctb"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_bon0y"]
+noise = SubResource("FastNoiseLite_ioctb")
 
 [node name="Node2D" type="Node2D"]
 position = Vector2(-11, -56)
@@ -78,3 +85,18 @@ shape = SubResource("RectangleShape2D_yfdhh")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D5"]
 position = Vector2(2154.25, 1498)
 shape = SubResource("RectangleShape2D_ty4eb")
+
+[node name="physicsobject" parent="." instance=ExtResource("4_a8ta6")]
+position = Vector2(668, 1602)
+
+[node name="collision" parent="physicsobject/rigidbody" index="0"]
+position = Vector2(-1.5, -2.00024)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_4p2hp")
+
+[node name="image" parent="physicsobject/rigidbody" index="1"]
+position = Vector2(1.52588e-05, -1.00023)
+scale = Vector2(0.307617, 0.331055)
+texture = SubResource("NoiseTexture2D_bon0y")
+
+[editable path="physicsobject"]
