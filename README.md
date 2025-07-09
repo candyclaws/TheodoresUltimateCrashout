@@ -1,2 +1,2 @@
 # TheodoresUltimateCrashout
-Theodore crashes out no cap
+A small game created for the 2024 langara hacks hackathon
